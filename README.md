@@ -9,14 +9,16 @@ https://github.com/dompling/Script
 # 不喜勿喷
 ————————————————————————----
 中国电信套餐余量查询 远程插件（点击跳转安装）
-loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js
+[loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000xj.js)
 
 定时脚本链接（长按复制手动添加）
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
 ————————————————————————----
 中国移动套餐余量查询 远程插件（点击链接跳转安装）
-loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js
+[loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js)
 
 定时脚本链接（长按复制手动添加）
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086.js
 ————————————————————————--
+Loon本地回环插件
+https://www.nsloon.com/openloon/import?plugin=https%3A%2F%2Fgh-proxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fways0210%2FLoop%2Fmain%2Fdev-loopback.lpx

@@ -1,5 +1,5 @@
-#!name=中国电信CK获取
-#!desc=中国电信Ck获取（仅适配Loon）。适配定时脚本订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
+#!name=中国电信Cookie获取
+#!desc=适配Loon定时脚本订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
 #!author=ways0210
 #!loon_version=3.5.3
 

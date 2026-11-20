@@ -14,7 +14,9 @@ hostname = e.dlife.cn
 【Loon脚本配置】:
 ===================
 [Script]
-http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信登录地址, script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js
+http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信登录地址, script-path=https://raw.githubusercontent.com/ways0210/Script/master/10000/index.js
+http-response ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=捕获SSON, script-path= https://raw.githubusercontent.com/ways0210/Script/master/10000/10000ck.js
+cron "0 8,18 * * *" script-path= https://raw.githubusercontent.com/ways0210/Script/master/10000/10000.js
 
 ===================
 【 QX  脚本配置 】 :

@@ -1,9 +1,4 @@
-# Script
-
-QuanX
+个人仅作Loon适配使用，QX用请访问原作者仓库
+部分修改仅适配个人，本人小白一个，有问题请自行解决，没办法提供帮助。
 
 # 学习写一些小的东西，本地脚本
-
-## 特别感谢
-
-1. [Peng-YM](https://github.com/Peng-YM) 大佬提供的 OpenApi

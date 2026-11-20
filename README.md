@@ -7,13 +7,13 @@ https://github.com/dompling/Script
 
 # 学习写的一些小东西  
 # 不喜勿喷
-————————————————————————--
+————————————————————————----
 中国电信套餐余量查询 远程插件（点击跳转安装）
 loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js
 
 定时脚本链接（长按复制手动添加）
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
-————————————————————————--
+————————————————————————----
 中国移动套餐余量查询 远程插件（点击链接跳转安装）
 loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js
 

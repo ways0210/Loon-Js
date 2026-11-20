@@ -9,7 +9,7 @@ https://github.com/dompling/Script
 # 不喜勿喷
 ————————————————————————----
 中国电信套餐余量查询 远程插件（点击跳转安装）
-[loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000xj.js)
+[[loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000xjindex.js)](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js)
 
 定时脚本链接（长按复制手动添加）
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js

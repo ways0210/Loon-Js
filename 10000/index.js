@@ -1,5 +1,5 @@
 #!name=中国电信Cookie获取
-#!desc=适配Loon的定时脚本订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
+#!desc=定时脚本的订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
 #!author=ways0210
 #!loon_version=3.5.3
 

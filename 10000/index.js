@@ -1,15 +1,13 @@
-/*
+#!name=中国电信套餐余量查询（仅适配Loon）
+#!desc=定时脚本下载地址：https://raw.githubusercontent.com/ways0210/Script/master/10000/10000.js
+#!author=ways0210
+#!loon_version=3.5.3
 
-获取方式：打开  https://e.dlife.cn/index.do 登录
+获取方式：网页打开  https://e.dlife.cn/index.do 登录
 ===================
 [MITM]
 hostname = e.dlife.cn
-
-【Surge脚本配置】:
-===================
-[Script]
-电信登录地址 = type=http-request,pattern=^https:\/\/e\.dlife\.cn\/user\/loginMiddle,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js,script-update-interval=0
-
+  
 ===================
 【Loon脚本配置】:
 ===================
@@ -18,11 +16,7 @@ http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信登录地址, 
 http-response ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=捕获SSON, script-path= https://raw.githubusercontent.com/ways0210/Script/master/10000/10000ck.js
 
 ===================
-【 QX  脚本配置 】 :
-===================
 
-[rewrite_local]
-^https:\/\/e\.dlife\.cn\/user\/loginMiddle  url script-request-header https://raw.githubusercontent.com/dompling/Script/master/10000/index.js
 
  */
 

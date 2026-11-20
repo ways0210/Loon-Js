@@ -1,5 +1,5 @@
-#!name=中国电信套餐余量查询（仅适配Loon）
-#!desc=定时脚本订阅地址：https://raw.githubusercontent.com/ways0210/Script/master/10000/10000.js
+
+#!desc=中国电信套餐余量查询（仅适配Loon）定时脚本订阅地址：https://raw.githubusercontent.com/ways0210/Script/master/10000/10000.js
 #!author=ways0210
 #!loon_version=3.5.3
 

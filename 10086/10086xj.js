@@ -1,5 +1,5 @@
-#!name=移动余量捕获
-#!desc=中国移动套餐余量查询（仅适配Loon）。定时脚本订阅地址：https://cdn.jsdelivr.net/gh/ways0210/Script@master/10086/中国移动套餐余量查询.conf
+#!name=中国移动Cookie获取
+#!desc=定时脚本的订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086.js
 #!author=ways0210
 
 [Script]

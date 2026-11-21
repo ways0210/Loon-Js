@@ -1,6 +1,6 @@
 {
-  "name": "My Loon Icons",
-  "description": "@ways0210自用应用图标库",
+  "name": "Lee Moon hee",
+  "description": "@ways0210 自用图标库",
   "icons": [
     {
       "name": "10086",
@@ -57,6 +57,18 @@
     {
       "name": "hgdj",
       "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/hgdj.PNG"
+    },
+    {
+      "name": "10000",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10000.PNG"
+    },
+    {
+      "name": "WeChat",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/WeChat.PNG"
+    },
+    {
+      "name": "xhs",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/xhs.PNG"
     },
     {
       "name": "douyin",

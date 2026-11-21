@@ -1,0 +1,70 @@
+{
+  "name": "My Loon Icons",
+  "description": "@ways0210自用应用图标库",
+  "icons": [
+    {
+      "name": "10086",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10086.PNG"
+    },
+    {
+      "name": "doubao",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/doubao.PNG"
+    },
+    {
+      "name": "kuaishou",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kuaishou.PNG"
+    },
+    {
+      "name": "qianwen",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/qianwen.PNG"
+    },
+    {
+      "name": "github",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/github.PNG"
+    },
+    {
+      "name": "wyy",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/wyy.PNG"
+    },
+    {
+      "name": "appst",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/appst.PNG"
+    },
+    {
+      "name": "qqmusic",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/qqmusic.PNG"
+    },
+    {
+      "name": "10010",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10010.PNG"
+    },
+    {
+      "name": "ysf",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/ysf.PNG"
+    },
+    {
+      "name": "deep",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/deep.PNG"
+    },
+    {
+      "name": "kugou",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kugou.PNG"
+    },
+    {
+      "name": "alyp",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/alyp.PNG"
+    },
+    {
+      "name": "hgdj",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/hgdj.PNG"
+    },
+    {
+      "name": "douyin",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/douyin.PNG"
+    },
+    {
+      "name": "qq",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/qq.PNG"
+    }
+  ]
+}

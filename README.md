@@ -8,7 +8,7 @@ https://github.com/dompling/Script
 # 学习写的一些小东西  
 # 不喜勿喷
 ————————————————————————----
-中国电信套餐余量查询 远程插件（点击跳转安装）
+中国电信Cookie获取 远程插件（点击跳转安装）
 [[loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000xjindex.js)](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js)
 
 定时脚本链接（长按复制手动添加）
@@ -17,7 +17,7 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js
 Ck登录获取地址  
 [https://e.dlife.cn/portal/web/index.html#/login](https://e.dlife.cn/index.do)
 ————————————————————————----
-中国移动套餐余量查询 远程插件（点击链接跳转安装）
+中国移动Cookie获取 远程插件（点击链接跳转安装）
 [loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js)
 
 定时脚本链接（长按复制手动添加）

@@ -3,5 +3,5 @@
 #!icon = https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/10000/10000.PNG
 #!
 
-http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信登录地址, script-path=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js/10000@main/index.js
-http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信捕获, script-path=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js/10000@main/10000ck.js
+http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信登录地址, script-path=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/10000/index.js
+http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信捕获, script-path=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/10000/10000ck.js

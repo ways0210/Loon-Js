@@ -1,6 +1,6 @@
 #!name = 中国电信 Cookie 获取
 #!desc = 登录自动捕获CK
-#!icon = https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/10000/10000.png
+#!icon = https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/10000/10000.PNG
 #!
 
 http-request ^https:\/\/e\.dlife\.cn\/user\/loginMiddle tag=电信登录地址, script-path=https://cdn.jsdelivr.net/gh/ways0210/10000@main/index.js

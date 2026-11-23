@@ -1,0 +1,21 @@
+#!name=节点检测工具合集
+#!desc=适用于Loon的节点检测工具，可进行地理位置、节点解锁、入口落地等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。
+#App链接=
+#!author=ways0210[https://github.com/ways0210]
+#!tag=节点检测
+#!system=
+#!system_version=
+#!loon_version=3.5.1(998)
+#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Node_detection_tool.plugin
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Node_detection_tool.png
+#!date=2026-11-23 19:57:49
+
+[Rule]
+DOMAIN,api.globalping.io,PROXY
+
+[Script]
+generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/NetworkEntryAndExitQueries.js") with tag="入口落地查询", img_url="globe.asia.australia.system", timeout=10
+generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/LocationDetection.js") with tag="地理位置查询", img_url="location.circle.system", timeout=10
+generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/SNodeUnlockDetection.js") with tag="节点解锁查询", img_url="play.circle.system", timeout=20
+generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/iptest.js, timeout=15, tag=节点质量查询,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/nodetcpcheck.js, tag=连通性测试, timeout=60,img-url=globe.asia.australia.system

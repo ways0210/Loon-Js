@@ -1,12 +1,12 @@
 #!name=节点检测工具合集
-#!desc=适用于Loon的节点检测工具，可进行地理位置、节点解锁、入口落地等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。
+#!desc=适用于Loon的节点检测工具，可进行地理位置、节点解锁、入口落地等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。（非原创只是把各位大佬的资源整合了一下）
 #App链接=
 #!author=ways0210[https://github.com/ways0210]
 #!tag=节点检测
 #!system=
 #!system_version=
 #!loon_version=3.5.1(998)
-#!homepage=https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Node_detection_tool.plugin
+#!homepage=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/iptesto.lpx
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/Node_detection_tool.png
 #!date=2026-11-23 19:57:49
 
@@ -18,5 +18,5 @@ generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/I
 generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/LocationDetection.js") with tag="地理位置查询", img_url="location.circle.system", timeout=10
 generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/NodeUnlockDetection.js") with tag="节点解锁查询", img_url="play.circle.system", timeout=20
 generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/iptest.js, timeout=15, tag=节点质量查询,img-url=globe.asia.australia.system
-generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/nodetcpcheck.js, tag=连通性测试, timeout=60,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/nodetcpcheck.js, tag=连通性能测试, timeout=60,img-url=globe.asia.australia.system
 generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/NodeLinkCheck.js, tag=代理链路检测, timeout=60,img-url=globe.asia.australia.system

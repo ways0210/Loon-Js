@@ -18,5 +18,6 @@ generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/I
 generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/LocationDetection.js") with tag="地理位置查询", img_url="location.circle.system", timeout=10
 generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/NodeUnlockDetection.js") with tag="节点解锁查询", img_url="play.circle.system", timeout=20
 generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/iptest.js, timeout=15, tag=节点质量查询,img-url=globe.asia.australia.system
-generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/nodetcpcheck.js, tag=连通性能测试, timeout=60,img-url=globe.asia.australia.system
-generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/NodeLinkCheck.js, tag=代理链路检测, timeout=60,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/nodetcpcheck.js, tag=连通性能测试, timeout=20,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/NodeLinkCheck.js, tag=代理链路检测, timeout=20,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP-jc/Speed.js, tag=节点Speed测速, timeout=20,img-url=globe.asia.australia.system

@@ -1,0 +1,326 @@
+#default config
+#Date: 2026.11.23
+#Author: Loon 3.5.3
+#Telegram: @ways0210
+#Github: @ways0210
+
+[General]
+disconnect-on-policy-change = true
+doh3-server = h3://cloudflare-dns.com/dns-query
+doh-server = https://dns.alidns.com/dns-query,https://doh.pub/dns-query
+ipv6-vif = auto
+ip-mode = dual
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+dns-server = system,119.29.29.29,114.114.114.114,223.5.5.5
+allow-wifi-access = false
+wifi-access-http-port = 7222
+wifi-access-socks5-port = 7221
+proxy-test-url = http://bing.com/generate_204
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+test-timeout = 3
+interface-mode = auto
+
+[Proxy]
+a13dd4acd61d1e5a_zhuhai.uk 🇷🇺俄罗斯 01 = VLESS,178.248.236.229,443,"a71d6c6d-c95e-4ec1-a892-22e21733bf09",transport=tcp,flow=xtls-rprx-vision,public-key="_3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0",short-id=d05a120d3506d2cc,udp=true,block-quic=true,over-tls=true,sni=144.hexdey.com,skip-cert-verify=true
+# 🇫🇷 法国 03 为grpc传输，Loon商店版grpc兼容性差，大概率不可用，仅供参考
+# 🇫🇷 法国 03 = VLESS,144.31.214.68,8443,"12910384-1ef8-40a3-818a-57277063ea66",transport=grpc,service-name=vlgrpc,sni=kk-fr2-21468.testkknegr.online,alpn="h2",skip-cert-verify=true,tls-profile=chrome,over-tls=true,udp=true,block-quic=false
+🇮🇹 意大利 03 = Shadowsocks,202.50.253.54,19999,aes-256-gcm,"ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",fast-open=false,udp=true,block-quic=false
+🇮🇹 意大利 09 = Shadowsocks,202.50.253.63,19999,aes-256-gcm,"ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",fast-open=false,udp=true,block-quic=false
+🇯🇵 日本 04 = VLESS,139.162.91.224,443,"ff3038b1-a2f5-428f-89cd-5d5e4efba8e7",transport=ws,public-key="wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk",short-id=e5b03494,path=/ws,host=itunes.apple.com,udp=true,block-quic=false,over-tls=true,sni=itunes.apple.com,tls-profile=chrome
+🇯🇵 日本 08 = VLESS,172.105.203.15,443,"c8c9b995-b4b9-4915-9c7d-dee94aa733ba",transport=ws,public-key="HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",short-id=0784b134,path=/ws,host=itunes.apple.com,udp=true,block-quic=false,over-tls=true,sni=itunes.apple.com,tls-profile=chrome
+🇯🇵 日本 09 = VLESS,149.28.29.156,443,"aa1a9052-720f-4bb0-92be-21b6baf9f386",transport=ws,public-key="qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0",short-id=e535df57,path=/ws,host=itunes.apple.com,udp=true,block-quic=false,over-tls=true,sni=itunes.apple.com,tls-profile=chrome
+
+[Remote Proxy]
+免费 = https://sub.store/download/collection/%E5%85%8D%E8%B4%B9?target=Loon,udp=true,block-quic=true,fast-open=default,vmess-aead=default,skip-cert-verify=true,enabled=false,flexible-sni=false,parser-plugin=fbdb76a56495f8af4d0a5b5c3a253dce
+免费 = https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub,udp=true,block-quic=true,fast-open=default,vmess-aead=default,skip-cert-verify=true,enabled=false,flexible-sni=false,parser-plugin=fbdb76a56495f8af4d0a5b5c3a253dce
+CNGJJC = https://www.carpetpacific.com/blanket/api/v1/client/subscribe?token=4e6a4648d51d0fd5ac53649336e9a02a.b7f0efc820c2b5bed5eb2c8f70e6581d,udp=default,block-quic=default,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=false
+YK = https://config.moe/config/8e351358b646db0ac04363aa57374d64,udp=true,block-quic=true,fast-open=default,vmess-aead=true,skip-cert-verify=true,enabled=true,flexible-sni=false
+ikuku = https://p4m7j.no-mad-sub.one/link/nCitdrJ9CfSVHEYy?sub=3&extend=1,udp=true,block-quic=true,fast-open=default,vmess-aead=default,skip-cert-verify=true,enabled=true,flexible-sni=false,img-url=paperplane
+
+[Proxy Chain]
+
+[Proxy Group]
+选择 = select,自动,全部,兜底,均衡,国内,香港,台湾,韩国,日本,美国,新加坡,冷门,国内直连,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_2.png
+全部 = select,全部_Filter,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png
+均衡 = load-balance,香港,interval = 300,max-timeout = 180,algorithm = pcc,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png
+兜底 = fallback,香港,台湾,新加坡,interval = 300,max-timeout = 180,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Magic.png
+自动 = select,延迟最低,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Back.png
+Github = select,香港,选择,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+TikTok = select,新加坡,选择,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok_1.png
+YouTube = select,香港,选择,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+Telegram = select,香港,选择,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+国内直连 = select,DIRECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+港台番剧 = select,DIRECT,香港,台湾,国内直连,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png
+延迟最低 = url-test,全部_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+广告拦截 = select,REJECT-DROP,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
+广告终结 = select,REJECT,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
+国内 = url-test,国内_Filter,interval = 300,tolerance = 180,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+香港 = url-test,香港_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+台湾 = url-test,台湾_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
+韩国 = url-test,韩国_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+日本 = url-test,日本_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+美国 = url-test,美国_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+新加坡 = url-test,新加坡_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+冷门 = url-test,冷门_Filter,url = http://www.gstatic.com/generate_204,interval = 180,tolerance = 300,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Maying.png
+
+[Remote Filter]
+全部_Filter = NameRegex, FilterKey = ".*广州"
+香港_Filter = NameRegex, FilterKey = "(?i)(港|HK|香港|🇭🇰|Hong)"
+台湾_Filter = NameRegex, FilterKey = "(?i)(台|TW|台湾|Tai)"
+日本_Filter = NameRegex, FilterKey = "(?i)(日本|川日|东京|日本|🇯🇵|大阪|泉日|埼玉|沪日|深日|JP|Japan)"
+韩国_Filter = NameRegex, FilterKey = "(?i)(KR|Korea|KOR|首尔|韩国|🇰🇷|韩|韓)"
+美国_Filter = NameRegex, FilterKey = "(?i)(美|波特兰|美国|🇺🇸|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States)"
+新加坡_Filter = NameRegex, FilterKey = "(?i)(新加坡|坡|新加坡|🇸🇬|狮城|SG|Singapore)"
+国内_Filter = NameRegex, FilterKey = "广州"
+冷门_Filter = NameRegex, FilterKey = "^(?!.*(港|HK|Hong|台|台湾|香港|美国|韩国|新加坡|🇭🇰|🇯🇵|🇰🇷|🇺🇸|🇸🇬|TW|Tai|🇨🇳 Taiwan|🇸🇬 Singapore|🇯🇵 Japan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|CN|中国|🇨🇳|深圳|北京|上海|广州移动|Japan|KR|Korea|KOR|首尔|韩|韓|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|新加坡|坡|狮城|SG|Singapore)).*$"
+
+[Rule]
+DOMAIN-KEYWORD,webcast-open.douyin.com,广告拦截
+DOMAIN-KEYWORD,adx-ad-prod.wkanx.com,广告拦截
+DOMAIN-KEYWORD,sougou,DIRECT
+DOMAIN-KEYWORD,chatgpt,香港
+DOMAIN-KEYWORD,dmm.co,日本
+DOMAIN-KEYWORD,github,Github
+DOMAIN-KEYWORD,tmead.y.qq.com,广告拦截
+DOMAIN,fanyiegg.youdao.com,广告拦截
+DOMAIN,sdk-log.youdao.com,广告拦截
+DOMAIN-SUFFIX,zijieapi.com,国内直连
+DOMAIN-SUFFIX,snssdk.com,国内直连
+DOMAIN-SUFFIX,byteimg.com,国内直连
+DOMAIN-SUFFIX,douyinpic.com,国内直连
+DOMAIN-SUFFIX,volcengineapi.com,国内直连
+DOMAIN-KEYWORD,tiktok,TikTok
+DOMAIN-KEYWORD,api.palera.in,国内直连
+DOMAIN-KEYWORD,ipadn.localtest.me,国内直连
+#Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR
+#Strategy:DIRECT,PROXY,REJECT
+#Options:no-resolve(only for IP-CIDR,IP-CIDR2,GEOIP,IP-ASN)
+
+FINAL,选择
+
+[Remote Rule]
+https://raw.githubusercontent.com/ddgksf2013/Filter/refs/heads/master/AppleIntelligence.list, policy=香港, tag=苹果Ai, enabled=true
+https://kelee.one/Tool/Loon/Lsr/AI.lsr, policy=选择, tag=AI.lsr, enabled=true
+https://rule.kelee.one/Loon/Proxy.lsr, policy=选择, tag=Proxy.lsr, enabled=true
+https://rule.kelee.one/Loon/Lan.lsr, policy=选择, tag=Lan.lsr, enabled=true
+https://raw.githubusercontent.com/Loon0x00/LoonLiteRules/main/proxy/YouTube.list, policy=YouTube, tag=YouTube, enabled=true
+https://raw.githubusercontent.com/Loon0x00/LoonLiteRules/main/proxy/Telegram.list, policy=Telegram, tag=Telegram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Proxy/Proxy.list, policy=自动, tag=Global, enabled=true
+https://adrules.top/adrules.list, policy=广告拦截, tag=AD, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Reject.list, policy=广告拦截, tag=去广告, enabled=true
+https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=广告拦截, tag=秋风去广告, enabled=true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=国内直连, tag=geoip, enabled=true
+https://rule.kelee.one/Loon/ChinaASN.lsr, policy=国内直连, tag=国内ASN, enabled=true
+https://rule.kelee.one/Loon/ChinaMax.lsr, policy=国内直连, tag=国内域名, enabled=true
+https://yfamilys.com/rule/ASN-CN.list, policy=国内直连, tag=ASN-CN.list, enabled=true
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/IP/CN.list, policy=国内直连, tag=国内域名解析, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Filter/refs/heads/master/BlockiOSUpdate.list, policy=广告终结, tag=屏蔽ios更新, enabled=true
+
+[Host]
+[Rewrite]
+
+
+[Script]
+cron "3 0-1 * * *" then script("台铃智能App签到.js") with tag="台铃智能签到", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SSID_1.png"
+cron "2 0/8 * * *" then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/10000.js") with tag="中国电信套餐余量查询", img_url="https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10000.PNG"
+cron "3 0/8 * * *" then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086.js") with tag="中国移动套餐余量查询"
+cron "21 0/8 * * *" then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/lssdjt/lssdjt.js") with tag="历史上的今天"
+cron "20 0/8 * * *" then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/sjs/sjsjj.js") with tag="上金所金价", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
+cron "15 0/8 * * 1,5" then script("证书时间提醒.js") with tag="P12证书剩余天数提醒"
+cron "*/30 * * * *" then script("github监控.js") with tag="Github仓库_iPan降级工具", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
+cron "*/30 * * * *" then script("Github仓库监控.js") with tag="Github监控_WQFiles备份清理", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png"
+cron "7 0/4 * * *" then script("https://raw.githubusercontent.com/ways0210/QuanX/master/Tasks/caiyun.js") with tag="彩云天气", img_url="https://raw.githubusercontent.com/Orz-3/mini/master/Color/GLaDOS.png"
+cron "8 0-1 * * *" then script("https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/wnCalendar.js") with tag="今日黄历", img_url="https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Google_Suite/Calendar.png"
+cron "10 0-1 * * *" then script("https://raw.githubusercontent.com/ways0210/QuanX/master/Tasks/exchange.js") with tag="今日汇率", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB_1.png"
+cron "30 21 * * 2,4,7" then script("https://raw.githubusercontent.com/ways0210/QuantumultX/master/Script/FSQ.js") with tag="双色球开奖", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_1.png"
+cron "31 21 * * 1,3,6" then script("https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js") with tag="大乐透开奖结果", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Cryptocurrency_3.png"
+cron "5 0-1 * * *" then script("https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/wnCalendar/DaysMatter.js") with tag="倒数日", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Lab.png"
+
+request if ${url} ~= /https:\/\/((weather-data\.apple)|(api.weather))\.com/i then script("https://raw.githubusercontent.com/ways0210/QuanX/master/Tasks/caiyun.js") with tag="caiyun.js"
+
+request if ${url} ~= /^https?:\/\/[^\/]+?\.(cloudfront\.net|lkkwip\.cn)\/api\/app\/vid\/h5\/m3u8\/.*/i then script("https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/hgdj.js") with tag="黄果短剧"
+cron "0 0 * * *" then script("https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/appstore/AppMonitor.js") with enable=false, tag="App价格连接", img_url="https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/App_Store.png"
+
+[Remote Script]
+https://cdn.jsdelivr.net/gh/ways0210/AppStore_Monitoring@main/AppStore_Monitoring.conf, tag=AppStore_Monitoring.conf, enabled=true
+https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/porntube/modules/porntube.lpx, tag=porntube VIP 解锁, enabled=true
+[Plugin]
+https://yfamilys.com/plugin/thunder.plugin, enabled=true
+https://yfamilys.com/plugin/BaiduCloud.plugin, enabled=true
+https://yfamilys.com/plugin/kuwo-unlock.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Sub-Store.lpx, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/curtinp118/Scripthub/main/scripts/finepro/finepro.js/_end_/finepro.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, tag=Fine修图 Pro, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/WeiGiegie/666/main/xunlei.js/_end_/xunlei.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, tag=迅雷解锁本地会员, img-url=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/xunlei.PNG, enabled=true
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/10000/index.js, img-url=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10000.PNG, enabled=true
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/10086/10086xj.js, img-url=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10086.PNG, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jd_price2.sgmodule/_end_/jd_price2.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, tag=京东比价、深色背景, img-url=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/jingdong.PNG, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jd_price.sgmodule/_end_/jd_price.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, img-url=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/jingdong.PNG, enabled=true
+https://kelee.one/Tool/Loon/Lpx/IPATool.lpx, enabled=true
+https://raw.githubusercontent.com/ways0210/Advertising/Loon/AppAD.plugin, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/TxvideoAD.snippet/_end_/TxvideoAD.sgmodule?type=qx-rewrite&n=%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E5%8E%BB%E5%B9%BF%E5%91%8A%40ZenmoFeiShi+%E5%8E%BB%E9%99%A4%E5%B9%BF%E5%91%8A&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ZenmoFeiShi, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/WeiFengAds.conf/_end_/WeiFengAds.sgmodule?type=qx-rewrite&n=%E5%A8%81%E9%94%8B%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%87%80%E5%8C%96%E8%A7%A3%E9%94%81%E6%9C%AC%E5%9C%B0%E4%BC%9A%E5%91%98&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/TencentDocAds.conf/_end_/TencentDocAds.sgmodule?type=qx-rewrite&n=%E8%85%BE%E8%AE%AF%E6%96%87%E6%A1%A3%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E5%BC%80%E5%B1%8F%E5%8E%BB%E5%BC%B9%E7%AA%97&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/pornhub.ads.js/_end_/pornhub.ads.sgmodule?type=qx-rewrite&n=Pornhub%E7%BD%91%E9%A1%B5%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%87%80%E5%8C%96%E7%BD%91%E9%A1%B5&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/ChinaBroadAds.conf/_end_/ChinaBroadAds.sgmodule?type=qx-rewrite&n=%E4%B8%AD%E5%9B%BD%E5%B9%BF%E7%94%B5%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%85%A8%E9%9D%A2%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/ChinaUnicomAds.conf/_end_/ChinaUnicomAds.sgmodule?type=qx-rewrite&n=%E4%B8%AD%E5%9B%BD%E8%81%94%E9%80%9A%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/Yuheng0101/X/refs/heads/main/Scripts/ChinaMobile/NoAds.js/_end_/NoAds.sgmodule?type=qx-rewrite&n=%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E5%8E%BB%E5%B9%BF%E5%91%8A%40Yuheng+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=Yuheng, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.conf/_end_/Adblock4limbo.sgmodule?type=qx-rewrite&n=%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%8E%BB%E5%B9%BF%E5%91%8A%40limbopro+%E5%8E%BB%E5%B9%BF%E5%91%8A&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=limbopro, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/Douban.conf/_end_/Douban.sgmodule?type=qx-rewrite&n=%E8%B1%86%E7%93%A3%E7%BD%91%E9%A1%B5%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E7%BD%91%E9%A1%B5%E4%BC%98%E5%8C%96%EF%BC%8C%E5%BF%AB%E6%8D%B7%E8%A7%82%E5%BD%B1&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/123pan.ads.js/_end_/123pan.ads.sgmodule?type=qx-rewrite&n=123%E4%BA%91%E7%9B%98%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E9%99%A4%E7%BD%91%E9%A1%B5%E5%B9%BF%E5%91%8A&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/MoJiWeatherAds.conf/_end_/MoJiWeatherAds.sgmodule?type=qx-rewrite&n=%E5%A2%A8%E8%BF%B9%E5%A4%A9%E6%B0%94%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/QiShuiMusicAds.conf/_end_/QiShuiMusicAds.sgmodule?type=qx-rewrite&n=%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/GoofishAds.conf/_end_/GoofishAds.sgmodule?type=qx-rewrite&n=%E9%97%B2%E9%B1%BC%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/CaiYunAds.conf/_end_/CaiYunAds.sgmodule?type=qx-rewrite&n=%E5%BD%A9%E4%BA%91%E5%A4%A9%E6%B0%94%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/CainiaoAds.conf/_end_/CainiaoAds.sgmodule?type=qx-rewrite&n=%E8%8F%9C%E9%B8%9F%E8%A3%B9%E8%A3%B9%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/NeteaseAds.conf/_end_/NeteaseAds.sgmodule?type=qx-rewrite&n=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/XiaoHongShuAds.conf/_end_/XiaoHongShuAds.sgmodule?type=qx-rewrite&n=%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E5%B9%BF%E5%91%8A%E5%8E%BB%E6%B0%B4%E5%8D%B0&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/bdpan.ads.js/_end_/bdpan.ads.sgmodule?type=qx-rewrite&n=%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/StartUpAds.conf/_end_/StartUpAds.sgmodule?type=qx-rewrite&n=%E5%A2%A8%E9%B1%BC%E5%8E%BB%E5%BC%80%E5%B1%8F2.0%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%B7%B2%E6%8A%93%E5%8C%85400%E4%BD%99%E5%BA%94%E7%94%A8%E5%8E%BB%E5%BC%80%E5%B1%8F&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/Q-Search.conf/_end_/Q-Search.sgmodule?type=qx-rewrite&n=Safari%E8%B6%85%E7%BA%A7%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40ddgksf2013+%E7%BF%BB%E8%AF%91%C2%B7%E7%A4%BE%E5%8C%BA%C2%B7%E8%B4%AD%E7%89%A9%C2%B7%E6%8D%A2%E5%8C%BA%C2%B7%E8%A7%86%E9%A2%91%C2%B7%E5%BC%95%E6%93%8E&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.snippet/_end_/DualSubs.YouTube.sgmodule?type=qx-rewrite&n=DualSubs%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40DualSubs+YouTube%E5%A2%9E%E5%BC%BA%E5%8F%8A%E5%8F%8C%E8%AF%AD%E5%AD%97%E5%B9%95&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=DualSubs, enabled=true
+http://script.hub/file/_start_/https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.snippet/_end_/iRingo.WeatherKit.sgmodule?type=qx-rewrite&n=WeatherKit%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40NSRingo+%E8%A7%A3%E9%94%81%E8%8B%B9%E6%9E%9C%E5%A4%A9%E6%B0%94&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=NSRingo, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/pikpak.fnc.js/_end_/pikpak.fnc.sgmodule?type=qx-rewrite&n=PikPak%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40ddgksf2013+%E8%A7%A3%E5%86%B3%E5%A4%A7%E9%99%86%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/XiaoHongShuBlockVideo.conf/_end_/XiaoHongShuBlockVideo.sgmodule?type=qx-rewrite&n=%E5%B0%8F%E7%BA%A2%E4%B9%A6%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40ddgksf2013+%E5%B1%8F%E8%94%BD%E9%A6%96%E9%A1%B5%E4%BF%A1%E6%81%AF%E6%B5%81Video&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js/_end_/jd_price.sgmodule?type=qx-rewrite&n=%E4%BA%AC%E4%B8%9C%E5%8E%86%E5%8F%B2%E6%AF%94%E4%BB%B7%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40wf021325+%E6%85%A2%E6%85%A2%E4%B9%B0%E8%8E%B7%E5%8F%96ck%E5%90%8E%E4%BD%BF%E7%94%A8&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=wf021325, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet/_end_/QX.sgmodule?type=qx-rewrite&n=SubStore%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40Peng-YM+%E6%9C%BA%E5%9C%BA%E8%AE%A2%E9%98%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=Peng-YM, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/Function/Bilibili_CC.conf/_end_/Bilibili_CC.sgmodule?type=qx-rewrite&n=B%E7%AB%99%E5%AD%97%E5%B9%95%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40ddgksf2013+%E9%80%82%E7%94%A8%E7%B9%81%E4%BD%93CC%E5%AD%97%E5%B9%95%E8%BD%AC%E7%AE%80%E4%BD%93&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/Html/General.conf/_end_/General.sgmodule?type=qx-rewrite&n=Google%E9%87%8D%E5%AE%9A%E5%90%91%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40DivineEngine+%E5%B0%86.cn%E9%87%8D%E5%AE%9A%E5%90%91%E8%87%B3.com&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=DivineEngine, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/nicegram.vip.js/_end_/nicegram.vip.sgmodule?type=qx-rewrite&n=Nicegram%E4%BC%9A%E5%91%98%E8%A7%A3%E9%94%81%40ddgksf2013+%E8%A7%A3%E9%94%81Nicegram%E4%BC%9A%E5%91%98&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/refs/heads/main/modules/script-hub.beta.loon.plugin, enabled=true
+https://gh-proxy.com/https://raw.githubusercontent.com/ways0210/Loop/main/dev-loopback.lpx, enabled=true
+https://raw.githubusercontent.com/ios151/91sp/refs/heads/main/modules/91porn.lpx, enabled=true
+https://raw.githubusercontent.com/ios151/Rewrite/refs/heads/main/huangdouduanju/modules/huangdou.lpx, enabled=true
+https://raw.githubusercontent.com/ios151/wloc/refs/heads/main/modules/wloc.lpx, enabled=true
+http://script.hub/file/_start_/https://limbopro.com/Adblock4limbo.sgmodule/_end_/Adblock4limbo.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, tag=毒奶去广告, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/sssss.js/_end_/sssss.plugin?type=qx-rewrite&target=loon-plugin&del=true&jqEnabled=true, tag=福利软件通用, enabled=true
+https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.loon.plugin, enabled=true
+https://raw.githubusercontent.com/Kianuni/WQGuard/main/Shields/Loon/WQGuard-Brotli-Shield.plugin, enabled=false
+https://kelee.one/Tool/Loon/Lpx/1.1.1.1.lpx, enabled=true
+https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Plugins/Badoo.lpx, enabled=true
+https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Plugins/X.lpx, enabled=true
+https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Plugins/YouTube.lpx, enabled=true
+https://raw.githubusercontent.com/devchristian1337/loon-plugins/refs/heads/main/Plugins/Spotify.lpx, enabled=true
+https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/sssss.js, tag=福利软件通用, enabled=true
+https://raw.githubusercontent.com/afengye/QX/main/tfvpn.js, enabled=true
+https://raw.githubusercontent.com/MaYIHEI/patch/refs/heads/main/scripting/loon-panel/loon/loon-panel.lpx, enabled=true
+https://raw.githubusercontent.com/Zerolost/scripting-script/main/ModuleDock/Scriptable2Scripting.plugin, enabled=true
+https://github.com/VirgilClyne/GetSomeFries/raw/main/plugin/HTTPDNS.Block.plugin, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/General.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/XiaomiSpeaker_remove_ads.lpx, enabled=true
+https://raw.githubusercontent.com/chengkongyiban/Loon/main/Loon-Gallery/BaiduCloud.plugin, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Node_detection_tool.plugin, enabled=true
+https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/iptest.lpx, enabled=true
+https://raw.githubusercontent.com/Roddy-D/Loon_plugins/refs/heads/main/plugin/nodetcpcheck.lpx, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Plugin/Kelee/Script-Hub.plugin, enabled=true
+https://github.com/Moli-X/Resources/raw/main/Sub-Store/SubStore.plugin, enabled=true
+https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon-parser.plugin, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ZenmoFeiShi/Qx/refs/heads/main/MT.snippet/_end_/MT.sgmodule?type=qx-rewrite&n=%E7%BE%8E%E5%9B%A2%E5%8E%BB%E5%B9%BF%E5%91%8A%40ZenmoFeiShi+%E5%BA%94%E7%94%A8%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ZenmoFeiShi, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/DaShiXiongAds.conf/_end_/DaShiXiongAds.sgmodule?type=qx-rewrite&n=%E5%A4%A7%E5%B8%88%E5%85%84%E5%BD%B1%E8%A7%86%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E5%BC%B9%E7%AA%97%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/JiaXiaoYiDianTongAds.conf/_end_/JiaXiaoYiDianTongAds.sgmodule?type=qx-rewrite&n=%E9%A9%BE%E6%A0%A1%E4%B8%80%E7%82%B9%E9%80%9A%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E5%BC%80%E5%B1%8F%E5%85%A8%E9%9D%A2%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/GuaZiVideoAds.conf/_end_/GuaZiVideoAds.sgmodule?type=qx-rewrite&n=%E7%93%9C%E5%AD%90%E5%BD%B1%E8%A7%86%E5%8E%BB%E5%B9%BF%E5%91%8A%40ZenmoFeiShi+%E5%85%A8%E9%9D%A2%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ZenmoFeiShi, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/MiGuVideoAds.conf/_end_/MiGuVideoAds.sgmodule?type=qx-rewrite&n=%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%85%A8%E9%9D%A2%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/missav.ads.js/_end_/missav.ads.sgmodule?type=qx-rewrite&n=MissAV%E7%BD%91%E9%A1%B5%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%87%80%E5%8C%96%E7%BD%91%E9%A1%B5&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/FakeiOSAds.conf/_end_/FakeiOSAds.sgmodule?type=qx-rewrite&n=%E5%BD%B1%E8%A7%86%E5%8E%BB%E5%B9%BF%E5%91%8A%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E9%99%A4IOS%E4%BC%AA%E8%A3%85%E5%B9%BF%E5%91%8A&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/Applet.conf/_end_/Applet.sgmodule?type=qx-rewrite&n=%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%8E%BB%E5%B9%BF%E5%91%8A%E8%A7%A3%E9%94%81%E5%86%85%E5%AE%B9%E9%9A%90%E8%97%8F&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/BiliBiliAds.conf/_end_/BiliBiliAds.sgmodule?type=qx-rewrite&n=%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8E%BB%E5%B9%BF%E5%91%8A%40ddgksf2013+%E5%85%A8%E9%9D%A2%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/rewrite/WeiboEnhanced.conf/_end_/WeiboEnhanced.sgmodule?type=qx-rewrite&n=%E5%BE%AE%E5%8D%9A%E5%8A%A9%E6%89%8B%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA%40ddgksf2013+%E5%85%A8%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://ddgksf2013.top/scripts/kkmusic.vip.js/_end_/kkmusic.vip.sgmodule?type=qx-rewrite&n=%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90%E4%BC%9A%E5%91%98%E8%A7%A3%E9%94%81%40ddgksf2013+%E9%9F%B3%E6%BA%90%E6%9B%BF%E6%8D%A2%EF%BC%8C%E5%B9%BF%E5%91%8A%E5%87%80%E5%8C%96&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=ddgksf2013, enabled=true
+http://script.hub/file/_start_/https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf/_end_/spotify.sgmodule?type=qx-rewrite&n=Spotify%E4%BC%9A%E5%91%98%E8%A7%A3%E9%94%81%40app2smile+%E8%A7%A3%E9%94%81Premium%E4%BC%9A%E5%91%98&headers=User-Agent:surge&del=true&jqEnabled=true&target=loon-plugin&category=app2smile, enabled=true
+https://ddgksf2013.top/module/ScriptHub.Loon.plugin, enabled=true
+https://kelee.one/Tool/Loon/Lpx/ZuiYou_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/iWallBiZhi_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/ZhuanZhuan_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/EtouchEcalendar_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/mobileClouds_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/PICC_Insurance_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Zhihu_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/iReader_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouKu_Video_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YoudaoTrans_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/VideoGo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/XunLei_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Himalaya_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/OraySunlogin_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weixin_external_links_unlock.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/WPForum_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weidian_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Weibo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MailMaster_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/TianQiTong_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/TXDocs_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Tencent_Video_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/SF-Express_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QQKSong_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/SodaMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QtingFM_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/PiPiXia_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MojiWeather_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MeituMYXJ_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MeiTu_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/MangoTV_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/TV_Assistant_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Kuwo_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/KuGou_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/KGRing_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/KuGouYouth_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QuarkScanking_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QuarkBrowser_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/KuaiShou_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QuickSearch.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/KuaiDi100_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JiaXiaoDrive_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/JiaKaoBaoDian_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/DouBan_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Dewu_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/NodeLinkCheck.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/ColorfulClouds_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Cainiao_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduWenku_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduSearchWebpage_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduNetDisk_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Baidu_input_method_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduTranslate_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BaiduMap_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/AliYunDrive_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Aiinquiry_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/iQiYi_Video_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YYVoiceTool_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/YouTubeSubtitlesTranslation.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/WARP_Node_Query.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/TestFlightRegionUnlock.lpx, enabled=false
+https://kelee.one/Tool/Loon/Lpx/TelegramRedirect.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Spotify_lyrics_translation.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Spotify_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Soul_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QQMusic_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/QQ_Redirect.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Keep_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/123NetWorkDisk_remove_ads.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, enabled=true
+https://raw.githubusercontent.com/SylvanRoe/Scripting/refs/heads/main/DashBoard-Kit/loon_dashboard.plugin, enabled=true
+https://raw.githubusercontent.com/MaYIHEI/paperclip/refs/heads/main/loon/paperclip-cookie/paperclip-cookie.lpx, tag=Cook, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.loon.plugin, policy=选择, enabled=true
+[Mitm]
+skip-server-cert-verify = false
+hostname = weather-data.apple.com,api.weather.com,*.cloudfront.net,*.lkkwip.cn,in.m.jd.com,apapia-sqk-weblogic.manmanbuy.com,mcs‑mimp‑web.sf‑express.com,dict.youdao.com,sdk-log.youdao.com,e.dlife.cn
+ca-p12 = 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
+ca-passphrase = R250LFH4

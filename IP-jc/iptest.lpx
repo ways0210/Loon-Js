@@ -14,9 +14,9 @@
 DOMAIN,api.globalping.io,PROXY
 
 [Script]
-generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/NetworkEntryAndExitQueries.js") with tag="入口落地查询", img_url="globe.asia.australia.system", timeout=10
-generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/LocationDetection.js") with tag="地理位置查询", img_url="location.circle.system", timeout=10
-generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/SNodeUnlockDetection.js") with tag="节点解锁查询", img_url="play.circle.system", timeout=20
-generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/iptest.js, timeout=15, tag=节点质量查询,img-url=globe.asia.australia.system
-generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/nodetcpcheck.js, tag=连通性测试, timeout=60,img-url=globe.asia.australia.system
-generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/NodeLinkCheck.js, tag=代理链路检测, timeout=60,img-url=globe.asia.australia.system
+generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/main/IP-jc/NetworkEntryAndExitQueries.js") with tag="入口落地查询", img_url="globe.asia.australia.system", timeout=10
+generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/main/IP-jc/LocationDetection.js") with tag="地理位置查询", img_url="location.circle.system", timeout=10
+generic then script("https://raw.githubusercontent.com/ways0210/Loon-Js/main/IP-jc/SNodeUnlockDetection.js") with tag="节点解锁查询", img_url="play.circle.system", timeout=20
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/main/IP-jc/iptest.js, timeout=15, tag=节点质量查询,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/main/IP-jc/nodetcpcheck.js, tag=连通性测试, timeout=60,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/main/IP-jc/NodeLinkCheck.js, tag=代理链路检测, timeout=60,img-url=globe.asia.australia.system

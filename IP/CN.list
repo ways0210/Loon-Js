@@ -1,6 +1,3 @@
-# 国内域名优先直连
-geosite:cn,DIRECT
-
 # IP 兜底，解析出来是国内 IP 也直连
 GEOIP,cn,DIRECT
 

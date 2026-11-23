@@ -1,4 +1,4 @@
-// 优先 ipx.al，失败切备用，弹窗版
+// 优先 ipx.al，失败切备用，弹窗版（修复 object 显示问题）
 const primary = "https://ipx.al/json";
 const backup = "https://ipapi.co/json/";
 
@@ -16,7 +16,9 @@ function check(url, callback) {
 
 check(primary, (data, err) => {
   if (data) {
-    const msg = `IP：${data.ip}\n地区：${data.location}\nASN：${data.asn}\n类型：${data.type}`;
+    const loc = data.location?.readable || JSON.stringify(data.location);
+    const type = data.type?.readable || String(data.type);
+    const msg = `IP：${data.ip}\n地区：${loc}\nASN：${data.asn}\n类型：${type}`;
     $alert("代理链路检测 - ipx.al", msg);
     return;
   }

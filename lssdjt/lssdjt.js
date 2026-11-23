@@ -1,7 +1,7 @@
 /**
  * 历史上的今天
  * 适用：Loon Cron 定时脚本
- * 抓取地址：https://e.dlife.cn/portal/web/index.html#/
+ * 订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/lssdjt/lssdjt.js
  */
 const url = "https://lishishangdejintian.bmcx.com/";
 if (typeof $task !== "undefined") {

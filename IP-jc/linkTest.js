@@ -1,5 +1,5 @@
-// 独立链路出口检测，无依赖，Loon 通用
-const url = "https://api.ipify.org?format=json";
+// 独立链路出口检测（带属地，Loon 通用，无 Sub-Store 依赖）
+const url = "https://ipapi.co/json/";
 
 $httpClient.get(url, (error, response, body) => {
   if (error) {
@@ -8,7 +8,8 @@ $httpClient.get(url, (error, response, body) => {
   }
   try {
     const data = JSON.parse(body);
-    $notification.post("代理链路检测", "出口IP：" + data.ip, "");
+    const msg = `出口IP：${data.ip}\n地区：${data.city}, ${data.region}, ${data.country_name}`;
+    $notification.post("代理链路检测", "✅ 检测成功", msg);
   } catch (e) {
     $notification.post("代理链路检测", "返回解析失败", body);
   }

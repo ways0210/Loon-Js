@@ -59,8 +59,8 @@ if (typeof $argument != 'undefined') {
 	color = shifts[b]
   // 构造面板
   let Panel = {};
-  if ($.isStash()) Panel.title = arg?.title ?? "NetSpeed"
-  else Panel.title = arg?.title ?? "NetSpeed"
+  if ($.isStash()) Panel.title = arg?.title ?? "Speed"
+  else Panel.title = arg?.title ?? "Speed"
   if ($.isLoon()) {
       Panel.message = `------------------------------\n`
       + `${round(Math.abs(speed * 8))} Mbps\n`

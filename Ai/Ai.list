@@ -8,6 +8,8 @@ DOMAIN-KEYWORD,developers.openai.com
 DOMAIN-KEYWORD,chatgpt
 DOMAIN-KEYWORD,chat.com
 DOMAIN-KEYWORD,chatgpt.com
+DOMAIN-KEYWORD.livekit.cloud
+AND,((DOMAIN-KEYWORD, chatgpt-async-webps-prod-), (DOMAIN-SUFFIX, webpubsub.azure.com))
 DOMAIN-KEYWORD,oaistatic.com
 DOMAIN-KEYWORD,oaiusercontent.com
 DOMAIN-KEYWORD,openai.com

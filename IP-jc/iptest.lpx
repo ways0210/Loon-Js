@@ -19,3 +19,4 @@ generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/Locat
 generic then script("https://raw.githubusercontent.com/ways0210/IP-jc/main/SNodeUnlockDetection.js") with tag="节点解锁查询", img_url="play.circle.system", timeout=20
 generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/iptest.js, timeout=15, tag=节点质量查询,img-url=globe.asia.australia.system
 generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/nodetcpcheck.js, tag=连通性测试, timeout=60,img-url=globe.asia.australia.system
+generic script-path=https://raw.githubusercontent.com/ways0210/IP-jc/main/NodeLinkCheck.js, tag=代理链路检测, timeout=60,img-url=globe.asia.australia.system

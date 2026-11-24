@@ -11,19 +11,19 @@
 #!date=2026-11-25 05:10
 
 /*
-===【Loon 配置】====
+//===【Loon 配置】====
 [MITM]
 hostname = ccsp-egmas.sf-express.com
 [Script]
 http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/ways0210/scripts/master/sfexpress/sfexpress.cookie.js, requires-body=true, tag=Rewrite: 顺丰速运
 
-====【Surge 配置】===
+//====【Surge 配置】===
 [MITM]
 hostname = ccsp-egmas.sf-express.com
 [Script]
 Rewrite: 顺丰速运 = type=http-request, pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/ways0210/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=true
 
-===【QuanX 配置】===
+//===【QuanX 配置】===
 [MITM]
 hostname = ccsp-egmas.sf-express.com
 [rewrite_local]

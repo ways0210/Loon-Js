@@ -5,7 +5,7 @@
 #!tag=
 #!system=
 #!system_version=
-#!loon_version=3.5.1(998)
+#!loon_version=3.5.3
 #!homepage=https://github.com/ways0210/Loon-Js/tree/master/js
 #!icon=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/IP-jc/SSID.png
 #!date=2026-11-25 02:55
@@ -20,8 +20,8 @@ hostname = ccsp-egmas.sf-express.com
 
 
 [Script]
-http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cookie/sfexpress.cookie.js, requires-body=true, tag=Rewrite: 顺丰速运
-cron "2 0 * * *" script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress.js
+http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/ways0210/scripts/master/sfexpress/sfexpress.cookie.js, requires-body=true, tag=Rewrite: 顺丰速运
+
 ===================
 
 

@@ -1,5 +1,3 @@
-#!icon=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/sfexpress.PNG
-
 const $ = new Env('顺丰速运')
 $.KEY_login = 'chavy_login_sfexpress'
 

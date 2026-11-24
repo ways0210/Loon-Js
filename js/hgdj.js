@@ -15,7 +15,8 @@ TG频道群：https://t.me/py996
 
 ^https?:\/\/[^\/]+\.(cloudfront\.net|lkkwip\.cn)\/api\/app\/vid\/h5\/m3u8\/.* url script-request-header https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/hgdj.js
 
-request if ${url} ~= /^https:\/\/[^\/]*\..*\.cn\/\w+\/[a-z0-9]{32}\/[a-z0-9]{32}\.m3u8(\?.*)?/i then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/hgdj.js") with tag="m3u8-header"
+[Script]
+request if ${url} ~= /^https:\/\/[^\/]*\..*\.cn\/\w+\/[a-z0-9]{32}\/[a-z0-9]{32}\.m3u8(\?.*)?/i then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/hgdj.js") with tag="hgdj-header"
 
 [mitm]
 

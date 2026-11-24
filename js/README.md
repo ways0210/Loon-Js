@@ -10,10 +10,12 @@ https://github.com/chavyleung/scripts/tree/master/sfexpress
 ```properties
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cookie/sfexpress.cookie.js
 
-## 定时脚本  
+```
+##  定时脚本  
 ```properties
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress.js
 
+```
 ## 也可以用下面的
 ```properties
 [MITM]
@@ -23,7 +25,8 @@ hostname = ccsp-egmas.sf-express.com
 http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/ways0210/scripts/master/sfexpress/sfexpress.cookie.js, requires-body=true, tag=Rewrite: 顺丰速运
 cron "1 0 * * *" script-path=https://raw.githubusercontent.com/ways0210/scripts/master/sfexpress/sfexpress.js
 
-## 配置 (Surge)
+```
+##  配置 (Surge)
 
 ```properties
 [MITM]

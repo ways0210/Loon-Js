@@ -7,7 +7,7 @@
 #!system_version=
 #!loon_version=3.5.3
 #!homepage=https://github.com/ways0210/Loon-Js/tree/master/js
-#!icon=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/IP-jc/SSID.png
+#!icon=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/sfexpress.PNG
 #!date=2026-11-25 02:55
   
 

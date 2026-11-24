@@ -149,7 +149,7 @@
 
 [rewrite_local]
 
-^https:\/\/[^\/]*\..*\.cn\/\w+\/[a-z0-9]{32}\/[a-z0-9]{32}\.m3u8(\?.*)? url script-request-header https://raw.githubusercontent.com/89996462/Quantumult-X/main/ghs/sssss.js
+^https:\/\/[^\/]*\..*\.cn\/\w+\/[a-z0-9]{32}\/[a-z0-9]{32}\.m3u8(\?.*)? url script-request-header https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/fljsl.js
 
 [Script]
 request if ${url} ~= /^https:\/\/[^\/]*\..*\.cn\/\w+\/[a-z0-9]{32}\/[a-z0-9]{32}\.m3u8(\?.*)?/i then script("https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/fljsl.js") with tag="m3u8-header"

@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 它的cookie是两段  
 例如：  
 cookie: HWWAFSESID=46d701751f  
-cookie: HWWAFSESTIME=17956208
+cookie: HWWAFSESTIME=17956208  
 boxjs里的ck填写规则为  
 HWWAFSESID=46d701751f;HWWAFSESTIME=17956208
 

@@ -14,4 +14,4 @@ https://gh-proxy.com/https://raw.githubusercontent.com/ways0210/Loon-js/main/js/
 ```
 
 直接跳转到Loon  
-https://www.nsloon.com/openloon/import?plugin=[https%3A%2F%2Fgh-proxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fways0210%2FLoop%2Fmain%2Fdev-loopback.lpx](https://gh-proxy.com/https://raw.githubusercontent.com/ways0210/Loon-js/main/js/Loop/dev-loopback.lpx)
+https://www.nsloon.com/openloon/import?plugin=[https%3A%2F%2Fgh-proxy.com%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fways0210%2FLoop%2Fmain%2Fdev-loopback.lpx](https://gh-proxy.com/https://raw.githubusercontent.com/ways0210/Loon-js/main/js/Loop/dev-loopback.lpx

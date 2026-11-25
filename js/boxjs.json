@@ -287,6 +287,26 @@
             "https://raw.githubusercontent.com/Orz-3/task/master/github.png"
           ],
             "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/github.js"
+          },
+          {
+            "id": "10000Ck",
+            "name": "中国电信",
+            "keys": ["@yy_10000.china_telecom_loginUrl"],
+            "settings": [
+           {
+            "id": "@yy_10000.china_telecom_loginUrl",
+            "name": "电信登录地址",
+            "val": null,
+            "type": "text",
+            "desc": ""
+           }
+           ],
+            "author": "@ways0210",
+            "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/10000",
+            "icons": [
+            "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10000.png",
+            "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png"
+           ],
+            "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10000/index.js"
     }
-  ]
 }

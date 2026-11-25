@@ -1,4 +1,4 @@
-const ck = $persistentStore.read("@tailing.ck");
+const ck = $getdata("@tailing.ck");
 if (!ck) {
   $notification.post("台铃智能App", "❌请先在BoxJS填写台铃Cookie");
   $done();
@@ -20,7 +20,7 @@ const headers = {
 };
 const body = `{}`;
 
-console.log("✅开始发起签到请求");
+console.log("读到的CK：" + ck);
 $httpClient.post({
     url: url,
     headers: headers,
@@ -43,7 +43,7 @@ $httpClient.post({
       }
     } catch(e) {
       console.log("解析JSON失败：", e);
-      $notification.post("台铃智能App", "返回不是JSON，凭证大概率失效");
+      $notification.post("台铃智能App", "返回不是JSON");
     }
   }
   $done();

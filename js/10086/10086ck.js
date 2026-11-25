@@ -1,4 +1,4 @@
-#!name=中国移动Cookie获取
+#!name=中国移动Cookie抓取
 #!desc=定时脚本的订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10086/10086.js
 #!author=ways0210
 #!loon_version=3.5.3

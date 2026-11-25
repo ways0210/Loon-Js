@@ -68,12 +68,12 @@
       "id": "TLZN",
       "name": "台铃智能",
       "keys": [
-        "@tailing.ck"
+        "@tailing.authorization"
       ],
       "settings": [
         {
           "id": "@tailing.authorization",
-          "name": "台铃 Authorization",
+          "name": "台铃Authorization",
           "val": "",
           "type": "text",
           "autoGrow": true,

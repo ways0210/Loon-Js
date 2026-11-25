@@ -255,6 +255,38 @@
                 "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png"
             ],
             "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/rs/rs.js"
-        }
-    ]
+        },
+        {
+            "id": "Github Monitor",
+            "name": "GitHub 监控",
+            "keys": [
+            "@github.repo"
+         ],
+            "settings": [
+         {
+            "id": "@github.repo",
+            "name": "仓库地址",
+            "val": "[\n\t\t{\n\t\t\t\t\"name\": \"NZW9314 脚本\",\n\t\t\t\t\"url\": \"https://github.com/nzw9314/QuantumultX/tree/master\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"Chavy 脚本\",\n\t\t\t\t\"url\": \"https://github.com/chavyleung/scripts\"\n\t\t},\n\t\t{\n\t\t\t\t\"name\": \"NobyDa\",\n\t\t\t\t\"file_names\": [\"JD-DailyBonus/JD_DailyBonus.js\", \"52pojie-DailyBonus\"],\n\t\t\t\t\"url\": \"https://github.com/NobyDa/Script/tree/master\"\n\t\t}\n]",
+            "type": "textarea",
+            "autoGrow": true,
+            "rows": 5,
+            "desc": "仓库地址 (JSON 格式)"
+          },
+        {
+            "id": "@github.token",
+            "name": "Github Token (可选)",
+            "val": "",
+            "type": "text",
+            "desc": "Github Token"
+         }
+         ],
+            "author": "@ways0210",
+            "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/github",
+            "icons": [
+            "https://raw.githubusercontent.com/Orz-3/mini/master/github.png",
+            "https://raw.githubusercontent.com/Orz-3/task/master/github.png"
+          ],
+            "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/github.js"
+    }
+  ]
 }

@@ -65,30 +65,24 @@
       "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/caiyun/caiyun.js"
     },
 {
-  "id": "tailing.app.sub",
-  "name": "台铃智能签到",
-  "icon": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/tailing.PNG",
-  "repo": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/TLZN",
-  "apps": [
+  "id": "TLZN",
+  "name": "台铃签到",
+  "keys": [
+    "@tailing.ck"
+  ],
+  "settings": [
     {
-      "id": "TLZN",
-      "name": "台铃签到",
-      "keys": [
-        "@tailing.ck"
-      ],
-      "settings": [
-        {
-          "id": "@tailing.ck",
-          "name": "台铃 Cookie",
-          "val": "",
-          "type": "text",
-          "autoGrow": true,
-          "rows": 3,
-          "desc": "抓包拿到 tailgdd.com 的 Cookie"
-        }
-      ],
-      "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/TLZN/TLZN.js"
+      "id": "@tailing.ck",
+      "name": "台铃 Cookie",
+      "val": "",
+      "type": "text",
+      "autoGrow": true,
+      "rows": 3,
+      "desc": "抓包拿到 tailgdd.com 的 Cookie"
     }
-  ]
+  ],
+  "icons": [
+    "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/tailing.PNG"
+  ],
+  "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/TLZN/TLZN.js"
 }
-    

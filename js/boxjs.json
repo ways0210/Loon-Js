@@ -66,10 +66,19 @@
     },
     {
       "id": "TLZN",
-      "name": "台铃智能App签到",
+      "name": "台铃智能",
       "keys": [
         "@tailing.ck"
       ],
+      {
+      "id": "@tailing.authorization",
+      "name": "台铃 Authorization",
+      "val": "",
+      "type": "text",
+      "autoGrow": true,
+      "rows": 5,
+      "desc": "抓包获取 Authorization"
+     }
       "settings": [
         {
           "id": "@tailing.ck",
@@ -81,6 +90,8 @@
           "desc": "抓包拿到 tailgdd.com 的 Cookie"
         }
       ],
+      "author": "@ways0210",
+      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/TLZN",
       "icons": [
         "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/tailing.PNG",
         "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/tailing.PNG"

@@ -3,30 +3,41 @@
 // 台铃智能 App 自动签到
 // 适用：Loon 3.5.3 + BoxJS
 // BoxJS变量：@tailing.ck
+//           @tailing.authorization
 // ==========================================
 
-// 1. 从 BoxJS 读取 Cookie
+// 1. 从 BoxJS 读取 CK 和 Authorization
 let ck = "";
+let authorization = "";
 
 try {
   const raw = $persistentStore.read("tailing");
 
   if (raw) {
     const obj = JSON.parse(raw);
+
     ck = String(obj.ck || "").trim();
+    authorization = String(obj.authorization || "").trim();
   }
 } catch (e) {
   console.log("BoxJS读取失败：" + e);
 }
 
-// 2. 检查 Cookie
-if (!ck) {
+// 2. 检查认证信息
+if (!ck || !authorization) {
+  let msg = [];
+
+  if (!ck) msg.push("CK未读取");
+  if (!authorization) msg.push("Authorization未读取");
+
   $notification.post(
     "台铃智能App",
-    "❌ Cookie读取失败",
-    "请检查BoxJS中是否填写了台铃CK"
+    "❌ 认证信息不完整",
+    msg.join("，") + "\n请检查BoxJS填写情况"
   );
+
   $done();
+
 } else {
 
   // 3. 签到接口
@@ -40,6 +51,7 @@ if (!ck) {
     "Sec-Fetch-Site": "same-origin",
     "Origin": "https://www.tailgdd.com",
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.15 (KHTML, like Gecko) Mobile/15E148",
+    "Authorization": authorization,
     "Sec-Fetch-Mode": "cors",
     "Cookie": ck,
     "Referer": "https://www.tailgdd.com/travel/tailg-shop-h5/",
@@ -63,8 +75,12 @@ if (!ck) {
 
     } else {
 
+      console.log("HTTP状态码：" + response.status);
+
       try {
         const res = JSON.parse(data);
+
+        console.log("接口返回：" + JSON.stringify(res));
 
         if (res.code === 100) {
 
@@ -77,7 +93,7 @@ if (!ck) {
 
           $notification.post(
             "台铃智能App",
-            "✅ 签到成功"
+            "🎉 签到成功"
           );
 
         } else {
@@ -91,10 +107,12 @@ if (!ck) {
 
       } catch (e) {
 
+        console.log("响应解析失败：" + e);
+
         $notification.post(
           "台铃智能App",
           "❌ 返回不是JSON",
-          "可能是Cookie失效或接口返回异常"
+          "HTTP：" + response.status
         );
 
       }

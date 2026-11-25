@@ -1,4 +1,4 @@
-const ck = $getdata("@tailing.ck");
+const ck = $read("@tailing.ck");
 if (!ck) {
   $notification.post("台铃智能App", "❌请先在BoxJS填写台铃Cookie");
   $done();

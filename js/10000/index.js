@@ -2,7 +2,7 @@
 #!desc=定时脚本的订阅地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10000/10000.js
 #!author=ways0210
 #!loon_version=3.5.3
-#!icon=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10000.PNG
+#!icon=https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10010.PNG
 
 获取方式：网页打开  https://e.dlife.cn/index.do 登录
 ===================

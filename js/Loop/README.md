@@ -10,7 +10,7 @@ https://nsloon.app/docs/General/#include-tun
 
 # 复制粘贴
 ```properties
-https://gh-proxy.com/https://raw.githubusercontent.com/ways0210/Loon-js/main/js/Loop/dev-loopback.lpx
+https://raw.githubusercontent.com/ways0210/Loon-js/main/js/Loop/dev-loopback.lpx
 ```
 
 直接跳转到Loon  

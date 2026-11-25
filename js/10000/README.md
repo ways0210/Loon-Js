@@ -17,6 +17,6 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10000/10000.js
 
 Ck登录获取地址  
 ```properties
-[https://e.dlife.cn/portal/web/index.html#/login](https://e.dlife.cn/index.do)
+https://e.dlife.cn/portal/web/index.html#/login
 ```
 ————————————————————————----

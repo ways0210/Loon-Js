@@ -67,9 +67,9 @@
     {
       "id": "TLZN",
       "name": "台铃智能App签到",
-      "keys": [,
-      "@tailing.ck"
-      ],
+      "keys": ["@tailing.ck"],
+      "settings": [
+        {
           "id": "@tailing.ck",
           "name": "台铃 Ck",
           "val": "",

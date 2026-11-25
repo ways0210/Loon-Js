@@ -8,7 +8,7 @@ https://github.com/chavyleung/scripts/tree/master/sfexpress
 
 ## 插件添加获取Cookie  
 ```properties
-https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cookie/sfexpress.cookie.js
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfck.js
 
 ```
 ##  定时脚本  

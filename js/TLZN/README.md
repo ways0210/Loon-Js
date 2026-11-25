@@ -1,5 +1,9 @@
 # 台铃智能App签到
 
+# boxjs订阅地址
+```properties
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
+```
 # 使用方法
 1.先订阅boxjs仓库
 2.添加脚本到loon

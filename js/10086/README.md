@@ -1,11 +1,10 @@
 # 个人仅作Loon适配使用  
-# QX用请访问原作者仓库  
+# 其它代理用请访问原作者仓库  
 https://github.com/dompling/Script  
 
-# 部分修改仅适配个人，本人小白一个  
-# 有问题请自行解决，没办法提供帮助。
-
-# 学习写的一些小东西  
+# 部分修改仅适配个人  
+# 本人小白一个  
+# 有问题请自行解决，没办法提供帮助。 
 ————————————————————————----
 中国移动Cookie获取 远程插件（点击链接跳转安装）
 [loon://import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10086/10086ck.js](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10086/10086ck.js)

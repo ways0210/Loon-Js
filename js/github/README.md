@@ -2,6 +2,7 @@
 ```properties
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 ```
+* 先去boxjs里配置好才能正常使用！！！  
 
 # 定时脚本
 ```properties

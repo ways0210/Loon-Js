@@ -38,6 +38,7 @@ type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com,
 此时，打开系统天气应用，会提示获取位置成功，如果没有提示，请确认1️⃣是否配置正确。
 3️⃣ 配置cron任务如：10 8-22/2 * * *
 4️⃣ 打开box.js设置彩云令牌(不是链接！！！）即可。
+5️⃣ Boxjs订阅地址：https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json
 */
 
 /********************** SCRIPT START *********************************/

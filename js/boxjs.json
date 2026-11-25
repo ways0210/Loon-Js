@@ -66,19 +66,19 @@
     },
     {
       "id": "TLZN",
-      "name": "台铃智能App签到",
+      "name": "台铃智能",
       "keys": [
         "@tailing.ck"
       ],
       "settings": [
         {
-          "id": "@tailing.ck",
-          "name": "台铃 Ck",
+          "id": "@tailing.authorization",
+          "name": "台铃 Authorization",
           "val": "",
           "type": "text",
           "autoGrow": true,
-          "rows": 3,
-          "desc": "抓包拿到 tailgdd.com 的 Cookie"
+          "rows": 5,
+          "desc": "抓包获取 Authorization"
         }
       ],
       "icons": [

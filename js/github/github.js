@@ -5,7 +5,7 @@
  * 3、新增：可以监控多层目录里面的某个文件
  * 原作者：@Peng-YM， toulanboy
  * 新维护者：@ways0210
- * 更新地址：https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js
+ * 原地址：https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js
  * 新地址：https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/github/github.js
  * 配置方法：
  * 1. 填写github token, 在github > settings > developer settings > personal access token 里面生成一个新token。

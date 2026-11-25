@@ -1,5 +1,5 @@
 # 个人仅作Loon适配使用  
-# QX用请访问原作者仓库  
+# 其它代理请访问原作者仓库  
 https://github.com/dompling/Script  
 
 # 部分修改仅适配个人  

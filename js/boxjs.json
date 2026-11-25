@@ -185,6 +185,76 @@
              "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/10086.PNG"
             ],
              "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/10086/10086.js"
+        },
+                {
+            "id": "rs.top",
+            "name": "热搜聚合",
+            "descs_html": [
+                "<p>1.自行选择</p>",
+                "<p>2.系统自动选择</p>",
+                "<a target='_blank' href='https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/top.js'>跳转脚本</a>"
+            ],
+            "keys": ["top_debug", "top_user_select", "top_limit"],
+            "settings": [
+                {
+                    "id": "top_debug",
+                    "name": "是否开启调试模式",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": ""
+                },
+                {
+                    "id": "top_user_select",
+                    "name": "自行选择通知类型",
+                    "val": null,
+                    "type": "radios",
+                    "desc": "",
+                    "items": [
+                        {
+                            "key": null,
+                            "label": "系统帮选"
+                        },
+                        {
+                            "key": "微博",
+                            "label": "微博"
+                        },
+                        {
+                            "key": "知乎",
+                            "label": "知乎"
+                        },
+                        {
+                            "key": "今日头条",
+                            "label": "今日头条"
+                        },
+                        {
+                            "key": "抖音",
+                            "label": "抖音"
+                        },
+                        {
+                            "key": "百度",
+                            "label": "百度"
+                        },
+                        {
+                            "key": "哔哩哔哩",
+                            "label": "哔哩哔哩"
+                        }
+                    ]
+                },
+                {
+                    "id": "top_limit",
+                    "name": "通知条数",
+                    "val": 10,
+                    "type": "number",
+                    "desc": "不建议超过20条[通知会截断]"
+                }
+            ],
+            "author": "@ways0210",
+            "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/rs",
+            "icons": [
+                "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png",
+                "https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png"
+            ],
+            "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/rs/rs.js"
         }
     ]
 }

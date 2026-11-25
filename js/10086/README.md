@@ -1,3 +1,4 @@
+# 脚本由 Scriptable 小组件移植过来的
 # 个人仅作Loon适配使用  
 # 其它代理用请访问原作者仓库  
 https://github.com/dompling/Script  

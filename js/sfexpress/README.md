@@ -13,7 +13,7 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfck.js
 ```
 ##  定时脚本  
 ```properties
-https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress.js
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfexpress.js
 ```
 ## 说明
 

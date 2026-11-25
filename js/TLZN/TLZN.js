@@ -1,48 +1,36 @@
-
 // ==========================================
 // 台铃智能 App 自动签到
 // 适用：Loon 3.5.3 + BoxJS
 // BoxJS变量：@tailing.ck
 //           @tailing.authorization
 // ==========================================
-
 // 1. 从 BoxJS 读取 CK 和 Authorization
 let ck = "";
 let authorization = "";
-
 try {
   const raw = $persistentStore.read("tailing");
-
   if (raw) {
     const obj = JSON.parse(raw);
-
     ck = String(obj.ck || "").trim();
     authorization = String(obj.authorization || "").trim();
   }
 } catch (e) {
   console.log("BoxJS读取失败：" + e);
 }
-
 // 2. 检查认证信息
 if (!ck || !authorization) {
   let msg = [];
-
   if (!ck) msg.push("CK未读取");
   if (!authorization) msg.push("Authorization未读取");
-
   $notification.post(
     "台铃智能App",
-    "❌ 认证信息不完整",
-    msg.join("，") + "\n请检查BoxJS填写情况"
+    "",
+    "❌ 认证信息不完整\n" + msg.join("，") + "\n请检查BoxJS填写情况"
   );
-
   $done();
-
 } else {
-
   // 3. 签到接口
   const url = "https://www.tailgdd.com/v1/api/shop/app/integral/sign/saveIntegralSignIn";
-
   // 4. 请求头
   const headers = {
     "X-Requested-With": "XMLHttpRequest",
@@ -58,66 +46,51 @@ if (!ck || !authorization) {
     "Accept-Language": "zh-CN,zh-Hans;q=0.9",
     "Accept": "application/json, text/plain, */*"
   };
-
   // 5. 执行签到
   $httpClient.post({
     url: url,
     headers: headers,
     body: "{}"
   }, (error, response, data) => {
-
     if (error) {
       $notification.post(
         "台铃智能App",
-        "❌ 请求异常",
-        String(error)
+        "",
+        "❌ 请求异常：" + String(error)
       );
-
     } else {
-
       console.log("HTTP状态码：" + response.status);
-
       try {
         const res = JSON.parse(data);
-
         console.log("接口返回：" + JSON.stringify(res));
-
         if (res.code === 100) {
-
           $notification.post(
             "台铃智能App",
-            "❌ 请勿重复签到"
+            "",
+            "❌ 请勿重复签到 ❌"
           );
-
         } else if (res.code === 0) {
-
           $notification.post(
             "台铃智能App",
-            "🎉 签到成功"
+            "",
+            "🎉 签 到 成 功 ✅"
           );
-
         } else {
-
           $notification.post(
             "台铃智能App",
+            "",
             "提示：" + (res.msg || "未知返回")
           );
-
         }
-
       } catch (e) {
-
         console.log("响应解析失败：" + e);
-
         $notification.post(
           "台铃智能App",
-          "❌ 返回不是JSON",
-          "HTTP：" + response.status
+          "",
+          "❌ 返回不是JSON\nHTTP：" + response.status
         );
-
       }
     }
-
     $done();
   });
 }

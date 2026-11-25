@@ -14,4 +14,4 @@
 [MITM]
 hostname = ccsp-egmas.sf-express.com
 [Script]
-http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/ways0210/scripts/master/sfexpress/sfexpress.cookie.js, requires-body=true, tag=Rewrite: 顺丰速运
+http-request ^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign script-path=https://raw.githubusercontent.com/ways0210/Loon-js/master/js/sfexpress/sf.js, requires-body=true, tag=Rewrite: 顺丰速运

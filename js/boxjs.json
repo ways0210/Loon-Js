@@ -308,6 +308,17 @@
             "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png"
            ],
             "script": "https://raw.githubusercontent.com/ways0210/Script/master/10000/index.js"
-          }
+          },
+          {
+            "id": "sfexpress",
+            "name": "顺丰速运",
+            "keys": ["chavy_login_sfexpress"],
+            "author": "@ways0210",
+            "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/sfexpress",
+            "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfexpress.js",
+            "icons": [
+            "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/sfexpress.png",
+            "https://raw.githubusercontent.com/Orz-3/mini/master/Color/sfexpress.png"
+           ]
         ]
       }

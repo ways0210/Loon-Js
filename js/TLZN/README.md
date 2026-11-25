@@ -13,7 +13,7 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 和Cookie填写到boxjs里保存
 6.运行测试，如果失败则是没有填写正确
 
-请求头 https://www.tailgdd.com
+请求头 https://www.tailgdd.com  
 复制 Authorization 后面的长串字符 和 cookie
 填写到boxjs的对应的窗口里后保存
 

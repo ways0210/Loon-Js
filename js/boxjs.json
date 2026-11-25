@@ -81,6 +81,8 @@
           "desc": "抓包获取 Authorization"
         }
       ],
+      "author": "@ways0210",
+      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/TLZN",     
       "icons": [
         "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/tailing.PNG",
         "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/tailing.PNG"

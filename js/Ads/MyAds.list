@@ -1,3 +1,5 @@
-ruleset https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, tag=去广告1, update-interval=86400
-
-ruleset https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Reject.list, tag=去广告2, update-interval=86400
+[Remote Rule]
+https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list, policy=广告拦截, tag=秋风去广告, enabled=true
+https://github.com/Moli-X/Tool/raw/X/Loon/Rules/Reject.list, policy=REJECT, tag=去广告, enabled=true
+https://adrules.top/adrules.list, policy=广告拦截, tag=AD, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Filter/refs/heads/master/BlockiOSUpdate.list, policy=广告终结, tag=屏蔽ios更新, enabled=true

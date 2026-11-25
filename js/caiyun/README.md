@@ -1,5 +1,5 @@
 # 彩云天气
-# 本脚本需要搭配 Boxjs 使用
+# 脚本需要搭配Boxjs使用
 # 原作者Boxjs订阅地址
 ```properties
 https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/box.js.json

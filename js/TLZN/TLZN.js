@@ -1,50 +1,38 @@
-// 台铃智能 App 自动签到（BoxJS版）
 
-// BoxJS 变量读取，支持 @tailing.ck 格式
-function getBoxData(key) {
-  const match = key.match(/^@([^.]+)\.(.+)$/);
+// ==========================================
+// 台铃智能 App 自动签到
+// 适用：Loon 3.5.3 + BoxJS
+// BoxJS变量：@tailing.ck
+// ==========================================
 
-  if (match) {
-    const rootKey = match[1];
-    const fieldPath = match[2];
+// 1. 从 BoxJS 读取 Cookie
+let ck = "";
 
-    // 读取 BoxJS 根数据
-    const raw = $persistentStore.read(rootKey);
+try {
+  const raw = $persistentStore.read("tailing");
 
-    if (raw) {
-      try {
-        const obj = JSON.parse(raw);
-        const value = fieldPath.split(".").reduce(
-          (data, field) => data == null ? undefined : data[field],
-          obj
-        );
-
-        if (value !== undefined && value !== null) {
-          return String(value);
-        }
-      } catch (e) {
-        console.log("BoxJS 数据解析失败：" + e);
-      }
-    }
+  if (raw) {
+    const obj = JSON.parse(raw);
+    ck = String(obj.ck || "").trim();
   }
-
-  // 兼容普通独立变量
-  return $persistentStore.read(key) || "";
+} catch (e) {
+  console.log("BoxJS读取失败：" + e);
 }
 
-const ck = getBoxData("@tailing.ck").trim();
-
+// 2. 检查 Cookie
 if (!ck) {
   $notification.post(
     "台铃智能App",
     "❌ Cookie读取失败",
-    "请检查BoxJS中是否填写了 @tailing.ck"
+    "请检查BoxJS中是否填写了台铃CK"
   );
   $done();
 } else {
 
+  // 3. 签到接口
   const url = "https://www.tailgdd.com/v1/api/shop/app/integral/sign/saveIntegralSignIn";
 
+  // 4. 请求头
   const headers = {
     "X-Requested-With": "XMLHttpRequest",
     "Connection": "keep-alive",
@@ -59,6 +47,7 @@ if (!ck) {
     "Accept": "application/json, text/plain, */*"
   };
 
+  // 5. 执行签到
   $httpClient.post({
     url: url,
     headers: headers,
@@ -71,33 +60,43 @@ if (!ck) {
         "❌ 请求异常",
         String(error)
       );
+
     } else {
+
       try {
         const res = JSON.parse(data);
 
         if (res.code === 100) {
+
           $notification.post(
             "台铃智能App",
             "❌ 请勿重复签到"
           );
+
         } else if (res.code === 0) {
+
           $notification.post(
             "台铃智能App",
             "✅ 签到成功"
           );
+
         } else {
+
           $notification.post(
             "台铃智能App",
             "提示：" + (res.msg || "未知返回")
           );
+
         }
 
       } catch (e) {
+
         $notification.post(
           "台铃智能App",
           "❌ 返回不是JSON",
           "可能是Cookie失效或接口返回异常"
         );
+
       }
     }
 

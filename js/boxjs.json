@@ -3,7 +3,7 @@
   "name": "ways0210 脚本仓库",
   "author": "@ways0210",
   "icon": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/touxiang.PNG",
-  "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/caiyun",
+  "repo": "https://github.com/ways0210/Loon-Js/tree/master",
   "apps": [
     {
       "id": "Caiyun",

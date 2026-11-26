@@ -5,7 +5,7 @@
  脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
  ============QuantumultX==============
  [task_local]
- 10 7 * * 1,3,5 https://raw.githubusercontent.com/gxggxl/QuantumultX/master/Script/FSQ.js, tag=双色球开奖信息, enabled=true
+ 10 7 * * 1,3,5 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/ssq/ssqkj.js, tag=双色球开奖信息, enabled=true
 
  ## ⚠️【免责声明】
  - 1、此脚本仅用于学习研究，不保证其合法性、准确性、有效性，请根据情况自行判断，本人对此不承担任何保证责任。
@@ -34,9 +34,8 @@ const header = {
     'X-Requested-With': `XMLHttpRequest`
 }
 
-let timeZone = new Date().getTimezoneOffset() / 60;
-let timestamp = Date.now() + (8 + timeZone) * 60 * 60 * 1000;
-let bjTime = new Date(timestamp).toLocaleString('zh', {hour12: false, timeZoneName: 'long'});
+const now = new Date();
+let bjTime = `${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')} 中国标准时间 ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')}`;
 
 !(async () => {
     console.log(`\n====== 脚本执行 ${bjTime} ======\n`);
@@ -66,18 +65,18 @@ function newFSQInfo(timeout = 0) {
                 for (let i = 0; i < dArr.length; i++) {
                     // console.log(dArr[i])
                     let elem = dArr[i]
-
+elem.kjdate = elem.kjdate.split('/').join('.');
                     if (i > 0) {
                         if (OLD == false) break;
                         console.log("开奖日期：" + elem.kjdate)
                         console.log("开奖期数：" + elem.kjIssue)
-                        console.log("开奖信息：红色：" + elem.kjznum + "蓝色：" + elem.kjtnum)
+                        console.log("开奖信息：红球：" + elem.kjznum + " 蓝球：" + elem.kjtnum)
                         msg += "\n【双色球】===> 往期开奖信息\n" + "【开奖期数】：" + elem.kjIssue
                             + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " 特：" + elem.kjtnum + "\n"
                     } else {
                         console.log("开奖日期：" + elem.kjdate)
                         console.log("开奖期数：" + elem.kjIssue)
-                        console.log("开奖信息：红色：" + elem.kjznum + "蓝色：" + elem.kjtnum)
+                        console.log("开奖信息：红球：" + elem.kjznum + " 蓝球：" + elem.kjtnum)
                         msg += "\n【双色球】===> 最新开奖信息\n" + "【开奖期数】：" + elem.kjIssue
                             + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " 特：" + elem.kjtnum + "\n"
                         newDateInfo = `【开奖期数】：${elem.kjIssue} 日期：${elem.kjdate}`

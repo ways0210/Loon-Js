@@ -71,13 +71,13 @@ function newFSQInfo(timeout = 0) {
                         if (OLD == false) break;
                         console.log("开奖日期：" + elem.kjdate)
                         console.log("开奖期数：" + elem.kjIssue)
-                        console.log("开奖信息：平码：" + elem.kjznum + "特码：" + elem.kjtnum)
+                        console.log("开奖信息：红色：" + elem.kjznum + " 蓝色：" + elem.kjtnum)
                         msg += "\n【双色球】===> 往期开奖信息\n" + "【开奖期数】：" + elem.kjIssue
                             + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " 特：" + elem.kjtnum + "\n"
                     } else {
                         console.log("开奖日期：" + elem.kjdate)
                         console.log("开奖期数：" + elem.kjIssue)
-                        console.log("开奖信息：平码：" + elem.kjznum + "特码：" + elem.kjtnum)
+                        console.log("开奖信息：红色：" + elem.kjznum + " 蓝色：" + elem.kjtnum)
                         msg += "\n【双色球】===> 最新开奖信息\n" + "【开奖期数】：" + elem.kjIssue
                             + " 日期：" + elem.kjdate + "\n【开奖信息】：" + elem.kjznum + " 特：" + elem.kjtnum + "\n"
                         newDateInfo = `【开奖期数】：${elem.kjIssue} 日期：${elem.kjdate}`

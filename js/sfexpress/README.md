@@ -4,7 +4,8 @@
 原作者仓库  
 https://github.com/chavyleung/scripts/tree/master/sfexpress
 
-# Boxjs仓库订阅 （需要搭配使用）
+# Boxjs仓库订阅  
+（需要搭配使用）
 ```properties
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 ```

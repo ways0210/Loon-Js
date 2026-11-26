@@ -141,6 +141,10 @@
     {
       "name": "qq",
       "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/qq.PNG"
+    },
+    {
+      "name": "touxiang",
+      "url": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/touxiang.PNG"
     }
   ]
 }

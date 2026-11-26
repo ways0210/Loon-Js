@@ -27,6 +27,6 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfexpress
 5. 到Boxjs里查看是否已显示会话
 6. 如果没看到或者没有
 7. 先返回上一页或者重复第3步
-8. 直到能够看到会话，然后按下载⏬箭头保存即可
+8. 直到能够看到会话，然后按下载⏬箭头保存
 9. 回到Loon运行测试脚本
 

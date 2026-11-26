@@ -30,5 +30,5 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfexpress
 8. 直到能够看到会话，然后按下载⏬箭头保存
 9. 回到Loon运行测试脚本
 
-—————————————【效果图】———————————--
-<img src="https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/sfexpress/sftz.PNG" width="420">
+—————【效果图】——————
+<img src="https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/sfexpress/sftz.PNG" width="320">

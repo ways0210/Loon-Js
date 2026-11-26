@@ -12,7 +12,8 @@
 * 为了使用方便可能部分脚本里加了个人信息
 * 望各位原创大佬海涵！！！
 
-# 本人Boxjs订阅地址
+# 本人Boxjs订阅地址  
+（部分脚本会用到）
 ```properties
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 ```

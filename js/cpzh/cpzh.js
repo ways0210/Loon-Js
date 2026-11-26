@@ -1,12 +1,7 @@
 /*
-【彩票查询】@evilbutcher, @Phantom
+【彩票综合开奖查询】
 
-【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）；https://github.com/sjzcook/phantom（欢迎star🌟）
-
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
-
-【致谢】
-感谢Peng-YM的OpenAPI.js！
+【BoxJs】https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 
 ⚠️【免责声明】
 ------------------------------------------
@@ -25,17 +20,17 @@
 【Surge】
 -----------------
 [Script]
-彩票查询 = type=cron,cronexp=0 30 21 * * * ,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js
+彩票综合开奖查询 = type=cron,cronexp=0 30 21 * * * ,script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cpzh/cpzh.js
 
 【Loon】
 -----------------
 [Script]
-cron "0 30 21 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js, tag=彩票查询
+cron "0 30 21 * * *" script-path=https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cpzh/cpzh.js, tag=彩票综合开奖查询
 
 【Quantumult X】
 -----------------
 [task_local]
-0 30 21 * * *  https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js, tag=彩票查询
+0 30 21 * * *  https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cpzh/cpzh.js, tag=彩票综合开奖查询
 
 【Icon】
 透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/ssq_tran.png
@@ -176,8 +171,8 @@ function checkdlt() {
       }
       var date = $.data.lotterySaleEndtime.split(/\s+/)[0];
       var detail =
-        date + "\n前区：" + redArr.join(",") + "\n后区：" + blueArr.join(",");
-      $.notify("彩票查询", "大乐透", detail);
+        date + "\n前区：" + redArr.join(",") + "  后区：" + blueArr.join(",");
+      $.notify("彩票查询"/"大乐透", detail);
       $.log("大乐透" + "\n" + detail);
     }
   });

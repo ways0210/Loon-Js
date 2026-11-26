@@ -1,6 +1,5 @@
 # 顺丰速运 签到
-本人原创  
-只做失效修复  
+非原创脚本 只做失效修复 
 原作者仓库  
 https://github.com/chavyleung/scripts/tree/master/sfexpress
 

@@ -1,5 +1,5 @@
 # 顺丰速运 签到
-本脚本非本人原创  
+本人原创  
 只做失效修复  
 原作者仓库  
 https://github.com/chavyleung/scripts/tree/master/sfexpress
@@ -28,6 +28,6 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfexpress
 5. 到Boxjs里查看是否已显示会话
 6. 如果没看到或者没有
 7. 先返回上一页或者重复第3步
-8. 在进入就能看到，然后按下载⏬箭头保存即可
+8. 直到能够看到会话，然后按下载⏬箭头保存即可
 9. 回到Loon运行测试脚本
 

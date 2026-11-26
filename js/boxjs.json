@@ -415,6 +415,86 @@
             "https://raw.githubusercontent.com/58xinian/icon/master/Two_color_ball.png"
            ],
             "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cpzh/cpzh.js"
-          }
-       ]
+          },
+          {
+            "id": "appStore",
+            "name": "AppStore版本监控",
+            "desc": "分别填写APP名称、ID、地区、本地版本，空项自动跳过",
+            "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/appmon.js",
+            "author": "ways0210",
+            "settings": [
+          {
+            "id": "app1_name",
+            "name": "APP1‑名称",
+            "type": "input",
+            "default": "Loon"
+           },
+           {
+            "id": "app1_id",
+            "name": "APP1‑AppID",
+            "type": "input",
+            "default": "1373567447"
+           },
+           {
+            "id": "app1_country",
+            "name": "APP1‑地区(CN/US/JP/HK)",
+            "type": "input",
+            "default": "US"
+           },
+           {
+            "id": "app1_localVer",
+            "name": "APP1‑本地版本",
+            "type": "input",
+            "default": "3.5.3"
+           },
+           {
+            "id": "app2_name",
+            "name": "APP2‑名称",
+            "type": "input",
+            "default": ""
+           },
+           {
+            "id": "app2_id",
+            "name": "APP2‑AppID",
+            "type": "input",
+            "default": ""
+           },
+           {
+            "id": "app2_country",
+            "name": "APP2‑地区(CN/US/JP/HK)",
+            "type": "input",
+            "default": "US"
+           },
+           {
+            "id": "app2_localVer",
+            "name": "APP2‑本地版本",
+            "type": "input",
+            "default": ""
+           },
+           {
+            "id": "app3_name",
+            "name": "APP3‑名称",
+            "type": "input",
+            "default": ""
+           },
+           {
+            "id": "app3_id",
+            "name": "APP3‑AppID",
+            "type": "input",
+            "default": ""
+           },
+           {
+            "id": "app3_country",
+            "name": "APP3‑地区(CN/US/JP/HK)",
+            "type": "input",
+            "default": "US"
+           },
+           {
+            "id": "app3_localVer",
+            "name": "APP3‑本地版本",
+            "type": "input",
+            "default": ""
     }
+  ]
+}
+       

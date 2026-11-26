@@ -364,6 +364,57 @@
             "https://cdn.jsdelivr.net/gh/zqzess/pichouse@master/pic/202309221616599.jpeg"
            ],
             "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/youjia/jryj.js"
-            }
-        ]
-      }
+           },
+           {
+            "id": "ssq",
+            "name": "彩票开奖查询",
+            "descs_html": [
+            "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js\">脚本地址</a>】"
+            ],
+            "settings": [
+            {
+            "id": "@ssq.ssq",
+            "name": "双色球",
+            "val": true,
+            "type": "boolean",
+            "desc": "打开即可查询双色球开奖结果"
+            },
+            {
+            "id": "@ssq.dlt",
+            "name": "大乐透",
+            "val": true,
+            "type": "boolean",
+            "desc": "打开即可查询大乐透开奖结果"
+            },
+            {
+            "id": "@ssq.3d",
+            "name": "福彩3D",
+            "val": true,
+            "type": "boolean",
+            "desc": "打开即可查询福彩3D开奖结果"
+            },
+            {
+            "id": "@ssq.qlc",
+            "name": "七乐彩",
+            "val": true,
+            "type": "boolean",
+            "desc": "打开即可查询七乐彩开奖结果"
+           },
+           {
+            "id": "@ssq.new",
+            "name": "仅查询当日开奖",
+            "val": true,
+            "type": "boolean",
+            "desc": "打开则会只查询今日开奖的彩票"
+           }
+           ],
+            "author": "@evilbutcher, @Phantom",
+            "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/ssq",
+            "icons": [
+            "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/ssq_tran.png",
+            "https://raw.githubusercontent.com/58xinian/icon/master/Two_color_ball.png"
+           ],
+            "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js"
+          }
+       ]
+    }

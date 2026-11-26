@@ -1,12 +1,7 @@
 /*
-【彩票查询】@evilbutcher, @Phantom
+【彩票综合开奖查询】
 
-【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）；https://github.com/sjzcook/phantom（欢迎star🌟）
-
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
-
-【致谢】
-感谢Peng-YM的OpenAPI.js！
+【BoxJs】https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/boxjs.json
 
 ⚠️【免责声明】
 ------------------------------------------
@@ -17,25 +12,6 @@
 5、本人对任何脚本引发的问题概不负责，包括但不限于由脚本错误引起的任何损失和损害。
 6、如果任何单位或个人认为此脚本可能涉嫌侵犯其权利，应及时通知并提供身份证明，所有权证明，我们将在收到认证文件确认后删除此脚本。
 7、所有直接或间接使用、查看此脚本的人均应该仔细阅读此声明。本人保留随时更改或补充此声明的权利。一旦您使用或复制了此脚本，即视为您已接受此免责声明。
-
-
-【使用说明】
-添加任务即可使用
-
-【Surge】
------------------
-[Script]
-彩票查询 = type=cron,cronexp=0 30 21 * * * ,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js
-
-【Loon】
------------------
-[Script]
-cron "0 30 21 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js, tag=彩票查询
-
-【Quantumult X】
------------------
-[task_local]
-0 30 21 * * *  https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js, tag=彩票查询
 
 【Icon】
 透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/ssq_tran.png
@@ -176,7 +152,7 @@ function checkdlt() {
       }
       var date = $.data.lotterySaleEndtime.split(/\s+/)[0];
       var detail =
-        date + "\n前区：" + redArr.join(",") + "\n后区：" + blueArr.join(",");
+        date + "\n前区：" + redArr.join(",") + " 后区：" + blueArr.join(",");
       $.notify("彩票查询", "大乐透", detail);
       $.log("大乐透" + "\n" + detail);
     }

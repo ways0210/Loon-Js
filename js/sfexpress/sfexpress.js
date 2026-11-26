@@ -4,15 +4,42 @@ $.KEY_login = 'chavy_login_sfexpress'
 !(async () => {
   $.tasks = []
   $.taskQueryError = ''
+  $.continuousSign = null
+  $.continuousSignError = ''
 
+  // 原有登录流程
   await loginapp()
   await $.wait(1000)
   await loginweb()
   await $.wait(1000)
+
+  // 新增：积分签到 
+  try {
+    await signContinuous()
+
+    const result = $.continuousSign || {}
+
+    if (result.success === true) {
+      $.continuousSignStatus = '成功'
+    } else if (String(result.errorCode) === '3400002') {
+      $.continuousSignStatus = '请勿重复签到❗️'
+    } else {
+      $.continuousSignStatus =
+        result.errorMessage || '签到结果未知'
+    }
+  } catch (e) {
+    $.continuousSignError = e.message || String(e)
+    $.continuousSignStatus = '执行异常'
+    $.log(`连续签到异常：${$.continuousSignError}`)
+  }
+
+  await $.wait(1000)
+
+  // 原有任务签到
   await sign()
   await $.wait(1000)
 
-  // 每日任务异常不影响签到
+  // 原有每日任务
   try {
     await signDailyTasks()
   } catch (e) {
@@ -72,6 +99,39 @@ function loginweb() {
   }
 
   return $.http.get(loginOpts)
+}
+
+// ==========================================
+// 积分签到 
+// 复用原有 loginapp + loginweb 登录会话
+// 不单独使用抓包获取的短效 Cookie
+// ==========================================
+// ==========================================
+// 积分签到
+// ==========================================
+function signContinuous() {
+  return $.http.post({
+    url: 'https://mcs-mimp-web.sf-express.com/mcs-mimp/commonPost/~memberNonactivity~integralSignV2Service~sign',
+    body: JSON.stringify({
+      tab: 2
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }).then(resp => {
+    $.continuousSign = parseResponse(resp, '积分签到')
+
+    const result = $.continuousSign || {}
+
+    if (result.success === true) {
+      $.continuousSignStatus = '签到成功 🎉'
+    } else if (String(result.errorCode) === '3400002') {
+      $.continuousSignStatus = '请勿重复签到❗️'
+    } else {
+      $.continuousSignStatus =
+        result.errorMessage || '签到结果未知'
+    }
+  })
 }
 
 // 每日签到
@@ -194,20 +254,33 @@ function getPoint(task) {
   })
 }
 
-// 消息通知
+// ==========================================
+// 统一消息通知
+// ==========================================
 function showmsg() {
   const signData = $.sign || {}
   const signObj = signData.obj || {}
   const success = signData.success === true
 
-  $.subt = '签到：' + (
+  // 通知副标题：任务签到
+  $.subt = '任务签到：' + (
     success
-      ? (signObj.hasFinishSign ? '重复' : '成功')
-      : '失败'
+      ? (signObj.hasFinishSign
+          ? '请勿重复签到❗️'
+          : '签到成功 🎉')
+      : 'Cookie已失效请重新获取❌'
   )
 
+  // 通知正文
   $.desc = []
 
+  // 积分签到结果
+  $.desc.push(
+    '积分签到：' +
+    ($.continuousSignStatus || '未取得签到结果')
+  )
+
+  // 连续签到说明
   if (success) {
     $.desc.push(
       `说明：连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
@@ -218,6 +291,7 @@ function showmsg() {
     )
   }
 
+  // 每日任务
   $.desc.push('', '每日任务：')
 
   if ($.taskQueryError) {
@@ -234,6 +308,7 @@ function showmsg() {
     }
   }
 
+  // 只发送一次系统通知
   $.msg($.name, $.subt, $.desc.join('\n'))
 }
 

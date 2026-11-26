@@ -367,9 +367,9 @@
            },
            {
             "id": "ssq",
-            "name": "彩票开奖查询",
+            "name": "彩票综合开奖",
             "descs_html": [
-            "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js\">脚本地址</a>】"
+            "点此直达【<a href=\"https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cpzh/cpzh.js\">脚本地址</a>】"
             ],
             "settings": [
             {
@@ -408,13 +408,13 @@
             "desc": "打开则会只查询今日开奖的彩票"
            }
            ],
-            "author": "@evilbutcher, @Phantom",
-            "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/ssq",
+            "author": "@ways0210",
+            "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/cpzh",
             "icons": [
             "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/ssq_tran.png",
             "https://raw.githubusercontent.com/58xinian/icon/master/Two_color_ball.png"
            ],
-            "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js"
+            "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/cpzh/cpzh.js"
           }
        ]
     }

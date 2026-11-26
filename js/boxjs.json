@@ -434,7 +434,7 @@
     },
     {
       "id": "appStore",
-      "name": "App版本监控",
+      "name": "App更新监控",
       "desc": "分别填写APP名称、ID、地区、本地版本，空项自动跳过",
       "keys": [
         "app1_name",

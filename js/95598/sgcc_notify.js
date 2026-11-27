@@ -66,7 +66,7 @@ const KEY = "SGCC_BRIDGE_DATA";
 
     // 发送通知
     $notification.post(
-      "网上国网 用电信息",
+      "🪙网上国网 电费信息💌 ",
       "",
       body
     );

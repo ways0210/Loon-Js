@@ -414,7 +414,7 @@
           "name": "七乐彩",
           "val": true,
           "type": "boolean",
-          "desc": "打开即可查询七乐彩开奖结果"
+          "desc": "打开则会只查询今日开奖的彩票"
         },
         {
           "id": "@ssq.new",
@@ -529,23 +529,19 @@
           "name": "APP3‑本地版本",
           "type": "input",
           "default": ""
-        },
+        }
+      ]
+    },
+    {
+      "id": "honye.sgcc",
+      "name": "⚡ 网上国网",
+      "keys": [
+        "SGCC_PHONE",
+        "SGCC_PASSWORD",
+        "SGCC_SMS_CODE"
+      ],
+      "settings": [
         {
-          "id": "honye.sgcc.boxjs",
-          "name": "网上国网",
-          "author": "Honye",
-          "description": "网上国网手机号、密码及短信验证码设置",
-          "apps": [
-         {
-          "id": "honye.sgcc",
-          "name": "⚡ 网上国网",
-          "keys": [
-          "SGCC_PHONE",
-          "SGCC_PASSWORD",
-          "SGCC_SMS_CODE"
-          ],
-          "settings": [
-          {
           "id": "SGCC_PHONE",
           "name": "登录手机号",
           "type": "text",
@@ -566,8 +562,14 @@
           "val": "",
           "desc": "首次登录或新设备验证时填写，平时留空"
         }
-      ]
+      ],
+      "author": "Honye",
+      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/95598",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/wsgw.PNG",
+        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/wsgw.PNG"
+      ],
+      "script": "https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/95598/95598.js"
     }
   ]
 }
-

@@ -1,3 +1,25 @@
+/*
+顺丰速运签到脚本  延续@chavyleung 大佬源码
+
+原作者仓库：https://github.com/chavyleung/scripts/tree/master/sfexpress
+
+新维护仓库：https://github.com/ways0210/Loon-Js/tree/master/js/sfexpress
+
+插件/重写：
+https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/sfexpress/sfck.js
+
+使用方法：打开顺丰App → 我 → 左上角“积分”提示会话成功即可。具体使用方法请参考仓库说明。
+
+源码支持 QX Loon Surge
+
+目前修复后测试仅 Loon 能用，具体自行测试。
+
+其它代理使用请自行适配，不提供任何帮助 ！！！
+
+更新时间：2026.11.28
+
+*/
+
 const $ = new Env('📦顺丰速运')
 $.KEY_login = 'chavy_login_sfexpress'
 
@@ -280,14 +302,14 @@ function showmsg() {
     ($.continuousSignStatus || '未取得签到结果')
   )
 
-  // 连续签到状态
+  // 连续签到说明
   if (success) {
     $.desc.push(
-      `状态：已连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
+      `说明：已连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
     )
   } else {
     $.desc.push(
-      `状态：${signData.errorMessage || signData.message || '未取得有效签到结果'}`
+      `说明：${signData.errorMessage || signData.message || '未取得有效签到结果'}`
     )
   }
 

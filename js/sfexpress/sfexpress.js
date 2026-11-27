@@ -22,7 +22,7 @@ $.KEY_login = 'chavy_login_sfexpress'
     if (result.success === true) {
       $.continuousSignStatus = '签到成功 🎉'
     } else if (String(result.errorCode) === '3400002') {
-      $.continuousSignStatus = '请勿重复签到❗️'
+      $.continuousSignStatus = '重复签到❗️'
     } else {
       $.continuousSignStatus =
         result.errorMessage || '签到结果未知'
@@ -124,9 +124,9 @@ function signContinuous() {
     const result = $.continuousSign || {}
 
     if (result.success === true) {
-      $.continuousSignStatus = '签到成功 🎉'
+      $.continuousSignStatus = '🎉签到成功🎉'
     } else if (String(result.errorCode) === '3400002') {
-      $.continuousSignStatus = '请勿重复签到❗️'
+      $.continuousSignStatus = '❗️重复签到❗️'
     } else {
       $.continuousSignStatus =
         result.errorMessage || '签到结果未知'
@@ -266,8 +266,8 @@ function showmsg() {
   $.subt = '任务签到：' + (
     success
       ? (signObj.hasFinishSign
-          ? '请勿重复签到❗️'
-          : '签到成功 🎉')
+          ? '❗️重复签到❗️'
+          : '🎉签到成功🎉')
       : 'Cookie已失效请重新获取❌'
   )
 
@@ -283,7 +283,7 @@ function showmsg() {
   // 连续签到说明
   if (success) {
     $.desc.push(
-      `说明：连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
+      `说明：已连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
     )
   } else {
     $.desc.push(

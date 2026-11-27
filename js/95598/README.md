@@ -32,8 +32,8 @@ https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/95598/wsgw_sgcc.js
 https://raw.githubusercontent.com/ways0210/Loon-Js/master/js/95598/sgcc_notify.js
 ```
 ————————————————————————--
-[App安装](https://apps.apple.com/us/app/scriptable/id1405459188?l=zh-Hans-CN) …… [小组件下载](https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com.cn%2FB%2FAYRMtOw8JWhBavLAAoGevvHkxoALAb0PKjkI5H2YFea70kKy0HFARPrc%2F%24%7Bf%7D%3Fo%3DAu_a1WsjVT6LSn14lHm2_aB9fa0xqsffFNzjrd3Y1800%26v%3D1%26x%3D3%26a%3DCAogXvknma7eLhCWLhCbjx4pkZ27E0izPMrSVFnxG06mMaUSbxCG6IbzoTQYhviBx6s0IgEAUgTkxoALWgRARPrcaid2QJ7V7xQy38PdNRSkjHPOifitDmhR0YOUA6jscmcRHuYIdHAnA7ZyJ2riWJD4XTGtATDZ_2jF1eWZQAjVR2oLGZPmuoFm4-D-HYbOXTMc-g%26e%3D1798398049%26fl%3D%26r%3D90FE9DB3-2B0A-4E05-A40B-EF5AD9644AE3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D212%26s%3DneizgsBOqO3FEMug5Nu2bd7hJos&uk=qyoa7GhvRdDJuntOS4rV_Q&f=SGCC.scriptable&sz=108782)  …………[小组件备用下载](https://github.com/user-attachments/files/35527226/SGCC.zip)
-如果链接失效了就去仓库主页下载
+[App安装](https://apps.apple.com/us/app/scriptable/id1405459188?l=zh-Hans-CN) …… [小组件下载](https://www.icloud.com/attachment/?u=https%3A%2F%2Fcvws.icloud-content.com.cn%2FB%2FAYRMtOw8JWhBavLAAoGevvHkxoALAb0PKjkI5H2YFea70kKy0HFARPrc%2F%24%7Bf%7D%3Fo%3DAu_a1WsjVT6LSn14lHm2_aB9fa0xqsffFNzjrd3Y1800%26v%3D1%26x%3D3%26a%3DCAogXvknma7eLhCWLhCbjx4pkZ27E0izPMrSVFnxG06mMaUSbxCG6IbzoTQYhviBx6s0IgEAUgTkxoALWgRARPrcaid2QJ7V7xQy38PdNRSkjHPOifitDmhR0YOUA6jscmcRHuYIdHAnA7ZyJ2riWJD4XTGtATDZ_2jF1eWZQAjVR2oLGZPmuoFm4-D-HYbOXTMc-g%26e%3D1798398049%26fl%3D%26r%3D90FE9DB3-2B0A-4E05-A40B-EF5AD9644AE3-1%26k%3D%24%7Buk%7D%26ckc%3Dcom.apple.clouddocs%26ckz%3Dcom.apple.CloudDocs%26p%3D212%26s%3DneizgsBOqO3FEMug5Nu2bd7hJos&uk=qyoa7GhvRdDJuntOS4rV_Q&f=SGCC.scriptable&sz=108782)  …………[小组件备用下载](https://github.com/user-attachments/files/35527226/SGCC.zip)  
+备用下载是压缩包 需要下载后先解压
 ————————————————————————--
 # 小组件下载后  
 # 长按分享导入到App里后点击运行

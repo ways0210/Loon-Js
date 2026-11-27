@@ -302,14 +302,14 @@ function showmsg() {
     ($.continuousSignStatus || '未取得签到结果')
   )
 
-  // 连续签到说明
+  // 连续签到状态
   if (success) {
     $.desc.push(
-      `说明：已连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
+      `签到状态：已连续签到${signObj.countDay == null ? '未知' : signObj.countDay}天`
     )
   } else {
     $.desc.push(
-      `说明：${signData.errorMessage || signData.message || '未取得有效签到结果'}`
+      `签到状态：${signData.errorMessage || signData.message || '未取得有效签到结果'}`
     )
   }
 

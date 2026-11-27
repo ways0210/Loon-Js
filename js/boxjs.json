@@ -297,11 +297,11 @@
       "id": "10000Ck",
       "name": "中国电信",
       "keys": [
-        "@yy_10000.china_telecom_loginUrl"
+        "china_telecom_cookie"
       ],
       "settings": [
         {
-          "id": "@yy_10000.china_telecom_loginUrl",
+          "id": "china_telecom_cookie",
           "name": "电信登录地址",
           "val": null,
           "type": "text",

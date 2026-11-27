@@ -529,6 +529,6 @@
           "name": "APP3‑本地版本",
           "type": "input",
           "default": ""
-        }
+        },
       ]
     }

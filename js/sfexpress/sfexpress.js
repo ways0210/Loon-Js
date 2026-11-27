@@ -20,7 +20,7 @@ $.KEY_login = 'chavy_login_sfexpress'
     const result = $.continuousSign || {}
 
     if (result.success === true) {
-      $.continuousSignStatus = '成功'
+      $.continuousSignStatus = '签到成功 🎉'
     } else if (String(result.errorCode) === '3400002') {
       $.continuousSignStatus = '请勿重复签到❗️'
     } else {

@@ -529,8 +529,45 @@
           "name": "APP3‑本地版本",
           "type": "input",
           "default": ""
+        },
+        {
+          "id": "honye.sgcc.boxjs",
+          "name": "网上国网",
+          "author": "Honye",
+          "description": "网上国网手机号、密码及短信验证码设置",
+          "apps": [
+         {
+          "id": "honye.sgcc",
+          "name": "⚡ 网上国网",
+          "keys": [
+          "SGCC_PHONE",
+          "SGCC_PASSWORD",
+          "SGCC_SMS_CODE"
+          ],
+          "settings": [
+          {
+          "id": "SGCC_PHONE",
+          "name": "登录手机号",
+          "type": "text",
+          "val": "",
+          "desc": "填写网上国网 App 登录手机号"
+        },
+        {
+          "id": "SGCC_PASSWORD",
+          "name": "登录密码",
+          "type": "text",
+          "val": "",
+          "desc": "填写网上国网 App 登录密码"
+        },
+        {
+          "id": "SGCC_SMS_CODE",
+          "name": "短信验证码",
+          "type": "text",
+          "val": "",
+          "desc": "首次登录或新设备验证时填写，平时留空"
         }
       ]
     }
   ]
 }
+

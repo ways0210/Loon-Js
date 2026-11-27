@@ -13,7 +13,7 @@ $.KEY_login = 'chavy_login_sfexpress'
   await loginweb()
   await $.wait(1000)
 
-  // 新增：积分签到 
+  // 新增：每日签到 
   try {
     await signContinuous()
 
@@ -102,12 +102,12 @@ function loginweb() {
 }
 
 // ==========================================
-// 积分签到 
+// 每日签到 
 // 复用原有 loginapp + loginweb 登录会话
 // 不单独使用抓包获取的短效 Cookie
 // ==========================================
 // ==========================================
-// 积分签到
+// 每日签到
 // ==========================================
 function signContinuous() {
   return $.http.post({
@@ -119,7 +119,7 @@ function signContinuous() {
       'Content-Type': 'application/json'
     }
   }).then(resp => {
-    $.continuousSign = parseResponse(resp, '积分签到')
+    $.continuousSign = parseResponse(resp, '每日签到')
 
     const result = $.continuousSign || {}
 
@@ -274,9 +274,9 @@ function showmsg() {
   // 通知正文
   $.desc = []
 
-  // 积分签到结果
+  // 每日签到结果
   $.desc.push(
-    '积分签到：' +
+    '每日签到：' +
     ($.continuousSignStatus || '未取得签到结果')
   )
 

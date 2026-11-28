@@ -529,75 +529,79 @@
           "name": "APP3‑本地版本",
           "type": "input",
           "default": ""
+        }
+      ]
+    },
+    {
+      "id": "dailyhotsongs",
+      "name": "多平台热歌榜",
+      "author": "ways0210",
+      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/Music_All",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/Music_All.PNG"
+      ],
+      "keys": [
+        "hotmusic_platforms",
+        "hotmusic_limit",
+        "hotmusic_douyin_type",
+        "hotmusic_deduplicate",
+        "hotmusic_open_url"
+      ],
+      "settings": [
+        {
+          "id": "hotmusic_platforms",
+          "name": "推送平台（可多选）",
+          "type": "checkboxes",
+          "val": ["apple", "qq", "netease", "douyin", "qishui", "spotify"],
+          "items": [
+            { "key": "apple", "label": "Apple Music" },
+            { "key": "qq", "label": "QQ音乐" },
+            { "key": "netease", "label": "网易云音乐" },
+            { "key": "douyin", "label": "抖音音乐" },
+            { "key": "qishui", "label": "汽水音乐" },
+            { "key": "spotify", "label": "Spotify" }
+          ]
         },
         {
-          "id": "dailyhotsongs",
-          "name": "多平台热歌榜",
-          "author": "ways0210",
-          "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/Music_All",
-          "icons": [
-          "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/Music_All.PNG"
-         ],
-          "keys": [
-          "hotmusic_platforms",
-          "hotmusic_limit",
-          "hotmusic_douyin_type",
-          "hotmusic_deduplicate",
-          "hotmusic_open_url"
-         ],
-         "settings": [
-         {
-         "id": "hotmusic_platforms",
-         "name": "推送平台（可多选）",
-         "type": "checkboxes",
-         "val": ["apple", "qq", "netease", "douyin", "qishui", "spotify"],
-         "items": [
-        { "key": "apple", "label": "Apple Music" },
-        { "key": "qq", "label": "QQ音乐" },
-        { "key": "netease", "label": "网易云音乐" },
-        { "key": "douyin", "label": "抖音音乐" },
-        { "key": "qishui", "label": "汽水音乐" },
-        { "key": "spotify", "label": "Spotify" }
-         ]
-         },
-         {
-           "id": "hotmusic_limit",
-           "name": "每个榜单歌曲数量",
-           "type": "selects",
-           "val": "10",
-           "items": [
-           { "key": "3", "label": "3首" },
-           { "key": "5", "label": "5首" },
-           { "key": "10", "label": "10首" }
+          "id": "hotmusic_limit",
+          "name": "每个榜单歌曲数量",
+          "type": "selects",
+          "val": "10",
+          "items": [
+            { "key": "3", "label": "3首" },
+            { "key": "5", "label": "5首" },
+            { "key": "10", "label": "10首" }
           ]
-          },
-          {
-           "id": "hotmusic_douyin_type",
-           "name": "抖音榜单类型",
-           "type": "selects",
-           "val": "hot",
-           "items": [
-         { "key": "hot", "label": "热歌榜" },
-         { "key": "soaring", "label": "飙升榜" }
+        },
+        {
+          "id": "hotmusic_douyin_type",
+          "name": "抖音榜单类型",
+          "type": "selects",
+          "val": "hot",
+          "items": [
+            { "key": "hot", "label": "热歌榜" },
+            { "key": "soaring", "label": "飙升榜" }
           ]
-          },
-          {
-           "id": "hotmusic_deduplicate",
-           "name": "跨平台重复歌曲筛选",
-           "type": "boolean",
-           "val": false
-          },
-          {
-           "id": "hotmusic_open_url",
-           "name": "点击通知跳转榜单",
-           "type": "boolean",
-           "val": false
-           }
-           ],
-           "scripts": [
-           {
-           "name": "运行每日热歌推送",
-           "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/Music_All/Music_All.js"
+        },
+        {
+          "id": "hotmusic_deduplicate",
+          "name": "跨平台重复歌曲筛选",
+          "type": "boolean",
+          "val": false
+        },
+        {
+          "id": "hotmusic_open_url",
+          "name": "点击通知跳转榜单",
+          "type": "boolean",
+          "val": false
+        }
+      ],
+      "scripts": [
+        {
+          "name": "运行每日热歌推送",
+          "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/Music_All/Music_All.js"
+        }
+      ]
     }
   ]
 }

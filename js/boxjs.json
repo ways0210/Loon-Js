@@ -604,45 +604,59 @@
         ]
         },
         {
-          "id": "express_notice",
+          "id": "express_notice_sub",
           "name": "快递物流查询",
-          "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/kdcx",
-          "icons": [
-          "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kdcx.PNG"
-         ],
-          "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/kdcx/kdcx.js",
-          "keys": [
+          "apps": [
          {
-          "key": "express_tracks",
+          "id": "express_notice",
+          "name": "重要快递通知",
+          "keys": [],
+          "settings": [
+         {
+          "id": "express_tracks",
           "name": "快递单号管理",
+          "val": "",
           "type": "textarea",
-          "value": "",
-          "default_value": "",
-          "desc": "每行填写一个快递，格式：单号|手机号后四位。其他快递手机号留空"
-          },
-          {
-          "key": "express_notify",
-          "name": "物流更新通知",
+          "placeholder": "JT2224505348926\nSF1234567890|1234\nYT1234567890",
+          "autoGrow": true,
+          "rows": 6,
+          "desc": "每行一个单号，需要手机号后四位时使用 单号|1234 格式"
+        },
+        {
+          "id": "express_api_key",
+          "name": "Tmini API 调用密钥",
+          "val": "",
+          "type": "textarea",
+          "desc": "填写 Tmini 后台申请的 API KEY，请勿泄露"
+         },
+        {
+          "id": "express_notify_every_time",
+          "name": "每次查询都通知",
+          "val": false,
           "type": "boolean",
-          "default_value": true,
-          "desc": "仅在出现新物流记录时发送通知"
-          },
-          {
-          "key": "express_stop_signed",
+          "desc": "关闭时仅物流更新才通知"
+        },
+        {
+          "id": "express_stop_signed",
           "name": "签收后自动停止",
+          "val": true,
           "type": "boolean",
-          "default_value": true,
-          "desc": "快递签收后通知一次并停止追踪"
-          },
-          {
-          "key": "express_full_log",
-          "name": "保留完整物流轨迹",
+          "desc": "签收后通知一次并停止追踪"
+        },
+        {
+          "id": "express_full_log",
+          "name": "显示完整物流轨迹",
+          "val": true,
           "type": "boolean",
-          "default_value": true,
-          "desc": "在运行日志中显示完整物流记录"
-          }
-          ],
-          "settings": []
+          "desc": "运行日志中显示完整物流记录"
         }
-      ]
-    }
+      ],
+      "author": "ways0210",
+      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/kdcx",
+      "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/kdcx/kdcx.js",
+      "icons": [
+        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kdcx.PNG",
+        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kdcx.PNG"
+      }
+    ]
+  }

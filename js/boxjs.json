@@ -600,6 +600,8 @@
         {
           "name": "运行每日热歌推送",
           "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/Music_All/Music_All.js"
+        }
+        ]
         },
         {
           "id": "express_notice",

@@ -1,7 +1,7 @@
 # 多平台热歌榜（测试版）
 支持的平台  
 抖音热歌 汽水音乐 QQ音乐  
-网易云音乐 Applemusic Spotify 歌曲榜单
+网易云音乐 Applemusic Spotify 的歌曲榜单  
 公益免费接口无需申请Api  
 搭配Boxjs配置使用  
 可以实现单平台或多平台同时推送  

@@ -532,7 +532,7 @@
         },
         {
           "id": "dailyhotsongs",
-          "name": "多平台每日热歌推送",
+          "name": "多平台热歌榜",
           "author": "ways0210",
           "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/Music_All",
           "icons": [

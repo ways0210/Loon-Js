@@ -654,10 +654,10 @@
         }
       ],
       "author": "ways0210",
-      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/express",
-      "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/express/express.js",
+      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/kdcx",
+      "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/kdcx/kdcx.js",
       "icons": [
-        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/express.PNG"
+        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kdcx.PNG"
       ]
     }
   ]

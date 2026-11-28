@@ -1,29 +1,23 @@
 /*
-
 README：https://raw.githubusercontent.com/githubdulong/Script/master/One.js
 每日一言（有道词典）
-
 原作者：@MuTu888 
 GitHub：https://github.com/githubdulong
-
 修改：TributePaulWalker
-
+【已修改：中文在上，英文在下】
 Surge：
 [Script]
 每日一句 = type=cron,cronexp=8 8 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/One.js
-
 QuanmutultX：
 [task_local]
 8 8 8 * * * https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/One.js, tag=每日一句
-
 */
-
 const $tool = new Tool()
 $tool.get('https://dict.youdao.com/infoline/style/cardList?mode=publish&client=mobile&style=daily&size=2', function (error, response, data) {
     let obj = JSON.parse(data);
     let date = new Date();
     let isAM = date.getHours() < 12 ? true : false;
-    let title = '每日' + (isAM ? '一言' : '一言') + (isAM ? ' ☀️' : ' 🌙');
+    let title = '☺️每日' + (isAM ? '一言' : '一言1') + (isAM ? ' ☀️' : ' 🌙');
     let subtitle = '';
     let scheme = 'alipay://platformapi/startapp?appId=60000002';
     let content = ""+scheme;
@@ -31,14 +25,14 @@ $tool.get('https://dict.youdao.com/infoline/style/cardList?mode=publish&client=m
     if (!error) {
         if (obj && obj.length > 1) {
             let yi = obj[1];
-            content = yi.title + '\n' + yi.summary;
+            // ========= 这里调换顺序：中文summary放前面，英文title放后面 =========
+            content = yi.summary + '\n' + yi.title;
             option["media-url"] = yi.image[0];
         }
     }
-    $tool.notify(title, subtitle, content);
+    $tool.notify(title, subtitle, content, option);
     $done();
 })
-
 function Tool() {
     _node = (() => {
         if (typeof require == "function") {
@@ -79,7 +73,7 @@ function Tool() {
         if (_isQuanX) {
             if (typeof options == "string") options = { url: options }
             options["method"] = "POST"
-            $task.fetch(options).then(response => { callback(null, _status(response), response.body) }, reason => callback(reason.error, null, null))
+            $task.fetch(options).then(response => { callback(null, _status(response), body) }, reason => callback(reason.error, null, null))
         }
         if (_isSurge) $httpClient.post(options, (error, response, body) => { callback(error, _status(response), body) })
         if (_node) _node.request.post(options, (error, response, body) => { callback(error, _status(response), body) })

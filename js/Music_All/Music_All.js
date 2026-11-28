@@ -711,7 +711,7 @@ if (displayTime && CONFIG.showFetchTime) {
     subtitle + " · Top " + finalSongs.length;
 
   if (CONFIG.showVersion) {
-    notificationSubtitle += " · V1.6";
+    notificationSubtitle += "";
   }
 
   // ----------------------------------------

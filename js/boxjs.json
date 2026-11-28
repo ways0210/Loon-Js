@@ -596,7 +596,7 @@
           "val": false
         }
       ],
-        "scripts": [
+      "scripts": [
         {
           "name": "运行每日热歌推送",
           "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/Music_All/Music_All.js"
@@ -660,3 +660,5 @@
         "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/express.PNG"
       ]
     }
+  ]
+}

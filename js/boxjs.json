@@ -604,59 +604,59 @@
         ]
         },
         {
-          "id": "express_notice_sub",
-          "name": "快递物流查询",
-          "apps": [
-         {
           "id": "express_notice",
-          "name": "重要快递通知",
-          "keys": [],
+          "name": "快递物流查询",
+          "keys": [
+          "express_tracks",
+          "express_api_key",
+          "express_notify_every_time",
+          "express_stop_signed",
+          "express_full_log"
+         ],
           "settings": [
          {
-          "id": "express_tracks",
-          "name": "快递单号管理",
-          "val": "",
-          "type": "textarea",
-          "placeholder": "JT2224505348926\nSF1234567890|1234\nYT1234567890",
-          "autoGrow": true,
-          "rows": 6,
-          "desc": "每行一个单号，需要手机号后四位时使用 单号|1234 格式"
-        },
-        {
-          "id": "express_api_key",
-          "name": "Tmini API 调用密钥",
-          "val": "",
-          "type": "textarea",
-          "desc": "填写 Tmini 后台申请的 API KEY，请勿泄露"
+         "id": "express_tracks",
+         "name": "快递单号管理",
+         "val": "",
+         "type": "textarea",
+         "placeholder": "JT2224505348926\nSF1234567",
+         "autoGrow": true,
+         "rows": 6,
+         "desc": "每行一个单号，需要手机号后四位时使用 单号|1234 格式"
          },
-        {
-          "id": "express_notify_every_time",
-          "name": "每次查询都通知",
-          "val": false,
-          "type": "boolean",
-          "desc": "关闭时仅物流更新才通知"
-        },
-        {
-          "id": "express_stop_signed",
-          "name": "签收后自动停止",
-          "val": true,
-          "type": "boolean",
-          "desc": "签收后通知一次并停止追踪"
-        },
-        {
-          "id": "express_full_log",
-          "name": "显示完整物流轨迹",
-          "val": true,
-          "type": "boolean",
-          "desc": "运行日志中显示完整物流记录"
-        }
-      ],
-      "author": "ways0210",
-      "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/kdcx",
-      "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/kdcx/kdcx.js",
-      "icons": [
-        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kdcx.PNG",
-        "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/kdcx.PNG"
-      ]
-    }
-  ]
+         {
+         "id": "express_api_key",
+         "name": "Tmini API 调用密钥",
+         "val": "",
+         "type": "textarea",
+         "desc": "填写 Tmini 后台申请的 API KEY，请勿泄露"
+         },
+         {
+         "id": "express_notify_every_time",
+         "name": "每次查询都通知",
+         "val": false,
+         "type": "boolean",
+         "desc": "关闭时仅物流更新才通知"
+         },
+         {
+         "id": "express_stop_signed",
+         "name": "签收后自动停止",
+         "val": true,
+         "type": "boolean",
+         "desc": "签收后通知一次并停止追踪"
+         },
+         {
+         "id": "express_full_log",
+         "name": "显示完整物流轨迹",
+         "val": true,
+         "type": "boolean",
+         "desc": "运行日志中显示完整物流记录"
+         }
+         ],
+         "author": "ways0210",
+         "repo": "https://github.com/ways0210/Loon-Js/tree/master/js/express",
+         "script": "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/js/express/express.js",
+         "icons": [
+         "https://cdn.jsdelivr.net/gh/ways0210/Loon-Js@master/icon/express.PNG"
+       ]
+     }
